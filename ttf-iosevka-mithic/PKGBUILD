@@ -1,0 +1,33 @@
+# Maintainer: MithicSpirit <rpc01234 at gmail dot com>
+# Contributor: Andy Kluger <https://t.me/andykluger>
+# Contributor: Markus Weimar <mail@markusweimar.de>
+
+_pkgname=iosevka
+pkgname=ttf-${_pkgname}-mithic
+_commit_id=\
+e282f734cd2e6e80c513aa7b23dc481d5ac6d579
+_pkgname_id="${_pkgname}-${_commit_id}"
+pkgver=11.1.0
+pkgrel=1
+pkgdesc='A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.'
+arch=('any')
+url='https://be5invis.github.io/Iosevka/'
+license=('custom:OFL')
+makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint')
+source=("${_pkgname_id}.tar.gz::https://github.com/MithicSpirit/${_pkgname}/archive/${_commit_id}.tar.gz")
+sha256sums=('863c408b6418f8d84d6170a4bb949ac534df98a2e4f383e4af4476e08d31457e')
+
+build () {
+  cd "${srcdir}/${_pkgname_id}"
+  npm install
+  npm update
+  npm run build -- ttf::iosevka-mithic
+}
+
+package () {
+  cd "${srcdir}/${_pkgname_id}"
+  install -d "${pkgdir}/usr/share/fonts/TTF/iosevka-mithic"
+  install -m644 dist/iosevka-mithic/ttf/*.ttf "${pkgdir}/usr/share/fonts/TTF/iosevka-mithic/"
+  install -d "${pkgdir}/usr/share/licenses/${_pkgname}"
+  install -m644 LICENSE.md "${pkgdir}/usr/share/licenses/${_pkgname}/"
+}

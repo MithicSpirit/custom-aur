@@ -1,0 +1,44 @@
+# Maintainer: MithicSpirit <rpc01234 at gmail dot com>
+# Contributor: Levente Polyak <anthraxx[at]archlinux[dot]org>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
+# Contributor: Thorsten Töpper <atsutane-tu@freethoughts.de>
+# Contributor: Thayer Williams <thayer@archlinux.org>
+# Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
+
+pkgname=dmenu-mithic
+_commit_id=84291691ee12b65fdcba1a3a801687cfc6b0f2f7
+pkgver=5.0
+pkgrel=1
+pkgdesc="Generic menu for X with special customizations."
+url='https://tools.suckless.org/dmenu/'
+arch=('x86_64')
+license=('MIT')
+makedepends=('make' 'gcc')
+depends=('sh' 'glibc' 'coreutils' 'libx11' 'libxinerama' 'libxft' 'freetype2' 'fontconfig' 'libfontconfig.so')
+source=("${pkgname}.tar.gz::https://github.com/MithicSpirit/${pkgname}/archive/${_commit_id}.tar.gz")
+sha256sums=('e0d99efc7d54c64966235afb84fd22ca5f1b5e3400c666621a9a52f2f35a8b11')
+provides=('dmenu')
+conflicts=('dmenu' 'dmenu-mithic-git')
+
+_pkgname_id="${pkgname}-${_commit_id}"
+prepare() {
+  cd "${srcdir}/${_pkgname_id}"
+  echo "CPPFLAGS+=${CPPFLAGS}" >> config.mk
+  echo "CFLAGS+=${CFLAGS}" >> config.mk
+  echo "LDFLAGS+=${LDFLAGS}" >> config.mk
+}
+
+build() {
+  cd "${srcdir}/${_pkgname_id}"
+  make \
+	  X11INC=/usr/include/X11 \
+	  X11LIB=/usr/lib/X11 \
+	  FREETYPEINC=/usr/include/freetype2
+}
+
+package() {
+  cd "${srcdir}/${_pkgname_id}"
+  make PREFIX=/usr DESTDIR="${pkgdir}" install
+  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

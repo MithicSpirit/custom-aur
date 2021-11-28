@@ -1,0 +1,25 @@
+pkgbase = dmenu-mithic
+	pkgdesc = Generic menu for X with special customizations.
+	pkgver = 5.0
+	pkgrel = 1
+	url = https://tools.suckless.org/dmenu/
+	arch = x86_64
+	license = MIT
+	makedepends = make
+	makedepends = gcc
+	depends = sh
+	depends = glibc
+	depends = coreutils
+	depends = libx11
+	depends = libxinerama
+	depends = libxft
+	depends = freetype2
+	depends = fontconfig
+	depends = libfontconfig.so
+	provides = dmenu
+	conflicts = dmenu
+	conflicts = dmenu-mithic-git
+	source = dmenu-mithic.tar.gz::https://github.com/MithicSpirit/dmenu-mithic/archive/84291691ee12b65fdcba1a3a801687cfc6b0f2f7.tar.gz
+	sha256sums = e0d99efc7d54c64966235afb84fd22ca5f1b5e3400c666621a9a52f2f35a8b11
+
+pkgname = dmenu-mithic
