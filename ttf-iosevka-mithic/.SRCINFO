@@ -1,7 +1,7 @@
 pkgbase = ttf-iosevka-mithic
 	pkgdesc = A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.
 	pkgver = 11.2.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://be5invis.github.io/Iosevka/
 	arch = any
 	license = custom:OFL
