@@ -1,0 +1,7 @@
+*
+**/*
+
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!theme.txt.diff
