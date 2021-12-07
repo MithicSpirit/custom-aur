@@ -4,3 +4,5 @@
 !.gitignore
 !PKGBUILD
 !.SRCINFO
+
+!get-makeflags.js
