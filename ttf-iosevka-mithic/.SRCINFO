@@ -1,16 +1,16 @@
 pkgbase = ttf-iosevka-mithic
 	pkgdesc = A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.
 	pkgver = 11.2.4
-	pkgrel = 4
+	pkgrel = 5
 	url = https://be5invis.github.io/Iosevka/
 	arch = any
 	license = custom:OFL
 	makedepends = nodejs>=12.22.0
 	makedepends = npm
 	makedepends = ttfautohint
-	source = iosevka-cb256c042a3ac116654a139fc1ff281332e41752.tar.gz::https://github.com/MithicSpirit/iosevka/archive/cb256c042a3ac116654a139fc1ff281332e41752.tar.gz
+	source = iosevka-41dca85e7680f734c1d16d27c6e4fa524108c87d.tar.gz::https://github.com/MithicSpirit/iosevka/archive/41dca85e7680f734c1d16d27c6e4fa524108c87d.tar.gz
 	source = get-makeflags.js
-	sha256sums = 42662cf23c313f2f96c3946503857ff2f998e00e089e69c14b2677bdcf52e01a
+	sha256sums = 67e319bef82bd4fe1ea652768c74a70f20684fc053af349700b6ad804058d2a8
 	sha256sums = 105a091376fcd985698abeeda74646322b600c2506c9c7406565699f49682945
 
 pkgname = ttf-iosevka-mithic
