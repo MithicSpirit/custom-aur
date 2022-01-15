@@ -7,9 +7,10 @@
 # Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
 
 pkgname=dmenu-mithic
-_commit_id=84291691ee12b65fdcba1a3a801687cfc6b0f2f7
+_commit_id=\
+a61d808fd54097d0c6150267a391c023900338b3
 pkgver=5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Generic menu for X with special customizations."
 url='https://tools.suckless.org/dmenu/'
 arch=('x86_64')
@@ -17,7 +18,7 @@ license=('MIT')
 makedepends=('make' 'gcc')
 depends=('sh' 'glibc' 'coreutils' 'libx11' 'libxinerama' 'libxft' 'freetype2' 'fontconfig' 'libfontconfig.so')
 source=("${pkgname}.tar.gz::https://github.com/MithicSpirit/${pkgname}/archive/${_commit_id}.tar.gz")
-sha256sums=('e0d99efc7d54c64966235afb84fd22ca5f1b5e3400c666621a9a52f2f35a8b11')
+sha256sums=('a4b8d086ae6b1bb74d953de22e329356d27ba448288a2e5c19cde3df400ee6aa')
 provides=('dmenu')
 conflicts=('dmenu' 'dmenu-mithic-git')
 

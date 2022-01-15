@@ -1,7 +1,7 @@
 pkgbase = dmenu-mithic
 	pkgdesc = Generic menu for X with special customizations.
 	pkgver = 5.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://tools.suckless.org/dmenu/
 	arch = x86_64
 	license = MIT
@@ -19,7 +19,7 @@ pkgbase = dmenu-mithic
 	provides = dmenu
 	conflicts = dmenu
 	conflicts = dmenu-mithic-git
-	source = dmenu-mithic.tar.gz::https://github.com/MithicSpirit/dmenu-mithic/archive/84291691ee12b65fdcba1a3a801687cfc6b0f2f7.tar.gz
-	sha256sums = e0d99efc7d54c64966235afb84fd22ca5f1b5e3400c666621a9a52f2f35a8b11
+	source = dmenu-mithic.tar.gz::https://github.com/MithicSpirit/dmenu-mithic/archive/a61d808fd54097d0c6150267a391c023900338b3.tar.gz
+	sha256sums = a4b8d086ae6b1bb74d953de22e329356d27ba448288a2e5c19cde3df400ee6aa
 
 pkgname = dmenu-mithic
