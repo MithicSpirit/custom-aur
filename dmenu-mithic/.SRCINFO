@@ -19,7 +19,7 @@ pkgbase = dmenu-mithic
 	provides = dmenu
 	conflicts = dmenu
 	conflicts = dmenu-mithic-git
-	source = dmenu-mithic.tar.gz::https://github.com/MithicSpirit/dmenu-mithic/archive/a61d808fd54097d0c6150267a391c023900338b3.tar.gz
+	source = dmenu-mithic-a61d808fd54097d0c6150267a391c023900338b3.tar.gz::https://github.com/MithicSpirit/dmenu-mithic/archive/a61d808fd54097d0c6150267a391c023900338b3.tar.gz
 	sha256sums = a4b8d086ae6b1bb74d953de22e329356d27ba448288a2e5c19cde3df400ee6aa
 
 pkgname = dmenu-mithic

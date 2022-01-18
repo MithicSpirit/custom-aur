@@ -11,18 +11,18 @@ _commit_id=\
 a61d808fd54097d0c6150267a391c023900338b3
 pkgver=5.0
 pkgrel=2
+_pkgname_id="${pkgname}-${_commit_id}"
 pkgdesc="Generic menu for X with special customizations."
 url='https://tools.suckless.org/dmenu/'
 arch=('x86_64')
 license=('MIT')
 makedepends=('make' 'gcc')
 depends=('sh' 'glibc' 'coreutils' 'libx11' 'libxinerama' 'libxft' 'freetype2' 'fontconfig' 'libfontconfig.so')
-source=("${pkgname}.tar.gz::https://github.com/MithicSpirit/${pkgname}/archive/${_commit_id}.tar.gz")
+source=("${_pkgname_id}.tar.gz::https://github.com/MithicSpirit/${pkgname}/archive/${_commit_id}.tar.gz")
 sha256sums=('a4b8d086ae6b1bb74d953de22e329356d27ba448288a2e5c19cde3df400ee6aa')
 provides=('dmenu')
 conflicts=('dmenu' 'dmenu-mithic-git')
 
-_pkgname_id="${pkgname}-${_commit_id}"
 prepare() {
   cd "${srcdir}/${_pkgname_id}"
   echo "CPPFLAGS+=${CPPFLAGS}" >> config.mk
