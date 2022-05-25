@@ -17,7 +17,7 @@ if (
 	(gps = val.groups) === undefined ||
 	(thr = gps.threads) === undefined
 )
-    process.exit(0);
+	process.exit(0);
 
 process.stdout.write("--jCmd=");
 process.stdout.write(thr);
