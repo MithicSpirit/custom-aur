@@ -1,7 +1,7 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit.
 	pkgver = 2022.07.23
-	pkgrel = 1
+	pkgrel = 2
 	arch = any
 	makedepends = paru
 
@@ -188,10 +188,15 @@ pkgname = mithic-base
 	depends = pv
 	depends = python-matplotlib
 	depends = python-matplotlib-sixel-git
+	depends = python-numpy
+	depends = python-pandas
 	depends = python-pip
 	depends = python-pynvim
+	depends = python-scipy
+	depends = python-sympy
 	depends = rxvt-unicode-truecolor-wide-glyphs
 	depends = sane-airscan
+	depends = sd
 	depends = signal-desktop
 	depends = simple-scan
 	depends = smartmontools

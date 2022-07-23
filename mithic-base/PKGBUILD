@@ -2,7 +2,7 @@
 
 pkgname=mithic-base
 pkgver=2022.07.23
-pkgrel=1
+pkgrel=2
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -195,10 +195,15 @@ package() {
 		'pv'
 		'python-matplotlib'
 		'python-matplotlib-sixel-git'
+		'python-numpy'
+		'python-pandas'
 		'python-pip'
 		'python-pynvim'
+		'python-scipy'
+		'python-sympy'
 		'rxvt-unicode-truecolor-wide-glyphs'
 		'sane-airscan'
+		'sd'
 		'signal-desktop'
 		'simple-scan'
 		'smartmontools'
