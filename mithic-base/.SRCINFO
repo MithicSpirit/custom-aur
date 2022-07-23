@@ -1,7 +1,7 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit.
-	pkgver = 2022.07.22
-	pkgrel = 2
+	pkgver = 2022.07.23
+	pkgrel = 1
 	arch = any
 	makedepends = paru
 
@@ -556,6 +556,7 @@ pkgname = mithic-base
 	optdepends = szyszka: Batch file renamer
 	optdepends = tcpdump: CLI packet analyzer
 	optdepends = teams: School
+	optdepends = tlp: Power management
 	optdepends = tilp: TI graphing calculator communication
 	optdepends = tmon: TUI thermal monitor
 	optdepends = tungsten: CLI for WolframAlpha

@@ -1,8 +1,8 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.07.22
-pkgrel=2
+pkgver=2022.07.23
+pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -585,6 +585,7 @@ package() {
 		'szyszka: Batch file renamer'
 		'tcpdump: CLI packet analyzer'
 		'teams: School'
+		'tlp: Power management'
 		'tilp: TI graphing calculator communication'
 		'tmon: TUI thermal monitor'
 		'tungsten: CLI for WolframAlpha'
