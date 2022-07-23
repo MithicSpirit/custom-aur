@@ -2,7 +2,7 @@
 
 pkgname=mithic-base
 pkgver=2022.07.22
-pkgrel=1
+pkgrel=2
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -67,6 +67,7 @@ package() {
 		'zsh'
 
 		'alacritty'
+		'alsa-utils'
 		'arc-gtk-theme'
 		'arc-icon-theme'
 		'arch-install-scripts'
@@ -139,11 +140,12 @@ package() {
 		'xautolock'
 		'zathura'
 
-		'alsa-utils'
+		'archlinux-artwork'
 		'authy'
+		'autokey-gtk'
 		'bind'
-		'bottom-git'
 		'bitwarden'
+		'bottom-git'
 		'chromium'
 		'deadbeef-git'
 		'deadbeef-mpris2-plugin'
@@ -247,6 +249,7 @@ package() {
 		'ttf-liberation'
 		'ttf-twemoji'
 		'ttf-ubuntu-font-family'
+		'xorg-fonts-misc'
 
 		# base-devel
 		'autoconf'
@@ -285,6 +288,14 @@ package() {
 		'turbostat'
 		'usbip'
 		'x86_energy_perf_policy'
+
+		# texlive-lang
+		'texlive-langchinese'
+		'texlive-langcyrillic'
+		'texlive-langextra'
+		'texlive-langgreek'
+		'texlive-langjapanese'
+		'texlive-langkorean'
 
 		# texlive-most
 		'texlive-bibtexextra'
@@ -332,6 +343,7 @@ package() {
 		'xorg-xinput'
 		'xorg-xkbcomp'
 		'xorg-xkbevd'
+		'xorg-xkbprint'
 		'xorg-xkbutils'
 		'xorg-xkill'
 		'xorg-xlsatoms'
@@ -349,7 +361,6 @@ package() {
 		'xorg-xwd'
 		'xorg-xwininfo'
 		'xorg-xwud'
-		'xorg-xkbprint'
 
 		# xorg-apps
 		'xorg-bdftopcf'
@@ -371,6 +382,7 @@ package() {
 		'xorg-xinput'
 		'xorg-xkbcomp'
 		'xorg-xkbevd'
+		'xorg-xkbprint'
 		'xorg-xkbutils'
 		'xorg-xkill'
 		'xorg-xlsatoms'
@@ -387,7 +399,6 @@ package() {
 		'xorg-xwd'
 		'xorg-xwininfo'
 		'xorg-xwud'
-		'xorg-xkbprint'
 
 		# xorg-drivers
 		'xf86-input-evdev'
@@ -402,10 +413,10 @@ package() {
 		'xf86-video-intel'
 		'xf86-video-nouveau'
 		'xf86-video-openchrome'
+		'xf86-video-qxl'
 		'xf86-video-vesa'
 		'xf86-video-vmware'
 		'xf86-video-voodoo'
-		'xf86-video-qxl'
 
 		# xorg-fonts
 		'xorg-font-util'
@@ -417,9 +428,10 @@ package() {
 		'intel-ucode: If running Intel CPU'
 		'vulkan-radeon: If running Radeon GPU'
 
-		'aspell: Doom Emacs'
 		'aspell-en: Doom Emacs'
+		'aspell: Doom Emacs'
 		'bash-language-server: Doom Emacs/Bash'
+		'biber: LaTeX'
 		'brittany: Doom Emacs/Haskell'
 		'cabal-install: Haskell'
 		'ccls: Doom Emacs/C*'
@@ -435,7 +447,7 @@ package() {
 		'hoogle: Haskell'
 		'hyphen-en: Doom Emacs'
 		'indent: C*'
-		'jg-gui: Java'
+		'jd-gui: Java'
 		'jdk-openjdk: Java'
 		'kotlin: Kotlin'
 		'languagetool: Doom Emacs'
@@ -476,25 +488,24 @@ package() {
 		'shellcheck: Doom Emacs/Bash'
 		'shfmt: Doom Emacs/Bash'
 		'strace: C*'
-		'stylelint: Doom Emacs/CSS'
 		'stylelint-config-recommended: Doom Emacs/CSS'
+		'stylelint: Doom Emacs/CSS'
 		'tectonic: LaTeX'
 		'texlab: Doom Emacs/LaTeX'
-		'texlive-lang: LaTeX'
-		'biber: LaTeX'
 		'tidy: Doom Emacs/HTML'
-		'typescript: Typescript'
 		'typescript-language-server: Doom Emacs/Typescript'
+		'typescript: Typescript'
 		'valgrind: C*'
 		'vscode-json-languageserver: Doom Emacs/JSON'
 		'wordnet-cli: Doom Emacs'
 		'yaml-language-server: Doom Emacs/YAML'
 
 		'gamemode: Gaming'
-		'linux-xanmod-edge: Gaming'
+		'lib32-mangohud-git: Gaming'
 		'linux-xanmod-edge-headers: Gaming'
-		'linux-zen: Gaming'
+		'linux-xanmod-edge: Gaming'
 		'linux-zen-headers: Gaming'
+		'linux-zen: Gaming'
 		'lutris: Gaming'
 		'mangohud-git: Gaming'
 		'openrct2: Gaming'
@@ -504,8 +515,8 @@ package() {
 		'protonup-git: Gaming'
 		'protonup-qt: Gaming'
 		'replay-sorcery: Gaming'
-		'steam: Gaming'
 		'steam-screensaver-fix: Gaming'
+		'steam: Gaming'
 		'steamtinkerlaunch: Gaming'
 
 		'amdgui-helper: Radeon GPU utility'
@@ -531,8 +542,8 @@ package() {
 		'godot: Game engine'
 		'gping: Ping improved'
 		'grub2-theme-preview: Grub theme previewer'
-		'handbrake: Video transcoding'
 		'handbrake-cli: Video transcoding'
+		'handbrake: Video transcoding'
 		'hexchat: IRC client'
 		'hexgrep: Grep for binary strings'
 		'hplip: Improved HP printer support'
@@ -545,8 +556,8 @@ package() {
 		'libguestfs: Virtualization'
 		'libratbag-git: Customize gaming mice'
 		'libsixel: Sixel'
-		'mathics: Computer algebra system'
 		'mathics-django: Computer algebra system'
+		'mathics: Computer algebra system'
 		'musescore: Composing music'
 		'nutty: Local network scanner'
 		'nyxt-browser-git: Alternative browser'
