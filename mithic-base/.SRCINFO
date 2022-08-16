@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit.
-	pkgver = 2022.08.12
+	pkgver = 2022.08.16
 	pkgrel = 1
 	arch = any
 	makedepends = paru
@@ -504,7 +504,6 @@ pkgname = mithic-base
 	optdepends = lld: C*
 	optdepends = lldb: C*
 	optdepends = llvm: C*
-	optdepends = luarocks: Lua
 	optdepends = manim: Manim
 	optdepends = maven: Java
 	optdepends = mercurial: Mercurial

@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.08.12
+pkgver=2022.08.16
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
@@ -534,7 +534,6 @@ package() {
 		'lld: C*'
 		'lldb: C*'
 		'llvm: C*'
-		'luarocks: Lua'
 		'manim: Manim'
 		'maven: Java'
 		'mercurial: Mercurial'
