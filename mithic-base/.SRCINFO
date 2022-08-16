@@ -1,7 +1,7 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit.
 	pkgver = 2022.08.16
-	pkgrel = 1
+	pkgrel = 2
 	arch = any
 	makedepends = paru
 
@@ -476,6 +476,7 @@ pkgname = mithic-base
 	optdepends = radeontop: If using AMD GPU
 	optdepends = solaar: If using Logitech peripherals
 	optdepends = vulkan-radeon: If using AMD GPU
+	optdepends = xf86-input-wacom: If using Wacom tablet
 	optdepends = aspell-en: Doom Emacs
 	optdepends = aspell: Doom Emacs
 	optdepends = bash-language-server: Doom Emacs/Bash

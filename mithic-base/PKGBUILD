@@ -2,7 +2,7 @@
 
 pkgname=mithic-base
 pkgver=2022.08.16
-pkgrel=1
+pkgrel=2
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -505,6 +505,7 @@ package() {
 		'radeontop: If using AMD GPU'
 		'solaar: If using Logitech peripherals'
 		'vulkan-radeon: If using AMD GPU'
+		'xf86-input-wacom: If using Wacom tablet'
 
 		'aspell-en: Doom Emacs'
 		'aspell: Doom Emacs'
