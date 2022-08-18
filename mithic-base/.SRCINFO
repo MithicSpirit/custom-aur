@@ -1,7 +1,7 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit.
 	pkgver = 2022.08.18
-	pkgrel = 1
+	pkgrel = 2
 	arch = any
 	makedepends = paru
 
@@ -594,6 +594,7 @@ pkgname = mithic-base
 	optdepends = krita: Image editor
 	optdepends = libguestfs: Virtualization
 	optdepends = libsixel: Sixel
+	optdepends = logseq-desktop-git: org-mode outside of Emacs
 	optdepends = mathics-django: Computer algebra system
 	optdepends = mathics: Computer algebra system
 	optdepends = musescore: Composing music

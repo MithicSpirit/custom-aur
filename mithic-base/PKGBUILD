@@ -2,7 +2,7 @@
 
 pkgname=mithic-base
 pkgver=2022.08.18
-pkgrel=1
+pkgrel=2
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -626,6 +626,7 @@ package() {
 		'krita: Image editor'
 		'libguestfs: Virtualization'
 		'libsixel: Sixel'
+		'logseq-desktop-git: org-mode outside of Emacs'
 		'mathics-django: Computer algebra system'
 		'mathics: Computer algebra system'
 		'musescore: Composing music'
