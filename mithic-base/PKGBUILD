@@ -1,8 +1,8 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.08.16
-pkgrel=2
+pkgver=2022.08.18
+pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -206,6 +206,7 @@ package() {
 		'python-pip'
 		'python-pynvim'
 		'python-scipy'
+		'python-seaborn'
 		'python-setuptools'
 		'python-sympy'
 		'rxvt-unicode-truecolor-wide-glyphs'
