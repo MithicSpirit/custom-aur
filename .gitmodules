@@ -1,0 +1,3 @@
+[submodule "appflowy-git"]
+	path = appflowy-git
+	url = ssh://aur@aur.archlinux.org/appflowy-git.git
