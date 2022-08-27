@@ -1,8 +1,8 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.08.18
-pkgrel=2
+pkgver=2022.08.26
+pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
@@ -129,6 +129,7 @@ package() {
 		'rofi-greenclip'
 		'starship'
 		'sxiv'
+		'systemsettings'
 		'texlive-bibtexextra'
 		'time'
 		'tmux'
@@ -224,6 +225,7 @@ package() {
 		'tor'
 		'tree'
 		'ueberzug'
+		'ugrep'
 		'unrar'
 		'usbutils'
 		'v4l2loopback-dkms'
@@ -559,7 +561,7 @@ package() {
 		'python-pylsp-mypy: Doom Emacs/Python'
 		'python-pytest: Doom Emacs/Python'
 		'python-requests: Python'
-		'python-z3: Python'
+		'python-z3-solver: Python'
 		'rust-analyzer: Doom Emacs/Rust'
 		'rustup: Rust'
 		'samarium: Samarium'
@@ -616,7 +618,6 @@ package() {
 		'handbrake-cli: Video transcoding'
 		'handbrake: Video transcoding'
 		'hexchat: IRC client'
-		'hexgrep: Grep for binary strings'
 		'hplip: Improved HP printer support'
 		'hyperfine: Command bechmarking'
 		'icecat-bin: Alternative browser'
