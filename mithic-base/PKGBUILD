@@ -1,13 +1,12 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.08.26
+pkgver=2022.09.17
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
 depends=()
 optdepends=()
-makedepends=('paru')
 
 package() {
 	depends+=(
@@ -101,6 +100,7 @@ package() {
 		'flameshot-git'
 		'git'
 		'gpm'
+		'kde-gtk-config'
 		'kdeconnect'
 		'kvantum'
 		'libnotify'
@@ -119,7 +119,11 @@ package() {
 		'pcmanfm'
 		'pkgfile'
 		'playerctl'
+		'python-pip'
+		'python-setuptools'
+		'python-wheel'
 		'qalculate-gtk-git'
+		'qt5-styleplugins'
 		'qt5ct'
 		'qt6ct'
 		'ranger-git'
@@ -180,6 +184,8 @@ package() {
 		'httpie'
 		'inetutils'
 		'ipython'
+		'kalendar'
+		'korganizer'
 		'libreoffice-fresh'
 		'libvterm'
 		'lsof'
@@ -204,12 +210,11 @@ package() {
 		'python-numpy'
 		'python-pandas'
 		'python-pillow'
-		'python-pip'
 		'python-pynvim'
 		'python-scipy'
 		'python-seaborn'
-		'python-setuptools'
 		'python-sympy'
+		'python-tqdm'
 		'rxvt-unicode-truecolor-wide-glyphs'
 		'sane-airscan'
 		'sd'
