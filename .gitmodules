@@ -4,3 +4,6 @@
 [submodule "samarium"]
 	path = samarium
 	url = ssh://aur@aur.archlinux.org/samarium.git
+[submodule "python-dahlia"]
+	path = python-dahlia
+	url = ssh://aur@aur.archlinux.org/python-dahlia.git
