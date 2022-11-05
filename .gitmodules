@@ -7,3 +7,6 @@
 [submodule "python-dahlia"]
 	path = python-dahlia
 	url = ssh://aur@aur.archlinux.org/python-dahlia.git
+[submodule "salad"]
+	path = salad
+	url = ssh://aur@aur.archlinux.org/salad.git
