@@ -19,3 +19,6 @@
 [submodule "python-pipe"]
 	path = python-pipe
 	url = ssh://aur@aur.archlinux.org/python-pipe.git
+[submodule "python-pbar"]
+	path = python-pbar
+	url = ssh://aur@aur.archlinux.org/python-pbar.git
