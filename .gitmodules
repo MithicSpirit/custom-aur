@@ -22,3 +22,6 @@
 [submodule "python-pbar"]
 	path = python-pbar
 	url = ssh://aur@aur.archlinux.org/python-pbar.git
+[submodule "autotrash"]
+	path = autotrash
+	url = ssh://aur@aur.archlinux.org/autotrash.git
