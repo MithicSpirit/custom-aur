@@ -25,3 +25,6 @@
 [submodule "autotrash"]
 	path = autotrash
 	url = ssh://aur@aur.archlinux.org/autotrash.git
+[submodule "gtk-vector-screenshot"]
+	path = gtk-vector-screenshot
+	url = ssh://aur@aur.archlinux.org/gtk-vector-screenshot.git
