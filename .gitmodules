@@ -28,3 +28,6 @@
 [submodule "gtk-vector-screenshot"]
 	path = gtk-vector-screenshot
 	url = ssh://aur@aur.archlinux.org/gtk-vector-screenshot.git
+[submodule "sc-im-git"]
+	path = sc-im-git
+	url = ssh://aur@aur.archlinux.org/sc-im-git.git
