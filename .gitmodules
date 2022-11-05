@@ -10,3 +10,6 @@
 [submodule "salad"]
 	path = salad
 	url = ssh://aur@aur.archlinux.org/salad.git
+[submodule "nyxt-browser-git"]
+	path = nyxt-browser-git
+	url = ssh://aur@aur.archlinux.org/nyxt-browser-git.git
