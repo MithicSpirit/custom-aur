@@ -16,3 +16,6 @@
 [submodule "python-pincer-git"]
 	path = python-pincer-git
 	url = ssh://aur@aur.archlinux.org/python-pincer-git.git
+[submodule "python-pipe"]
+	path = python-pipe
+	url = ssh://aur@aur.archlinux.org/python-pipe.git
