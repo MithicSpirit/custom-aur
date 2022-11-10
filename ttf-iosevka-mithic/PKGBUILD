@@ -34,6 +34,6 @@ package () {
     cd "${srcdir}/${_pkgname_id}"
     install -d "${pkgdir}/usr/share/fonts/TTF/"
     install -m644 dist/.super-ttc/*.ttc "${pkgdir}/usr/share/fonts/TTF/"
-    install -d "${pkgdir}/usr/share/licenses/${_pkgname}"
+    install -d "${pkgdir}/usr/share/licenses/${pkgname}"
     install -m644 LICENSE.md "${pkgdir}/usr/share/licenses/${pkgname}/"
 }
