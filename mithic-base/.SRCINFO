@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit.
-	pkgver = 2022.09.17
+	pkgver = 2022.11.10
 	pkgrel = 1
 	arch = any
 
@@ -256,10 +256,10 @@ pkgname = mithic-base
 	depends = terminus-font
 	depends = tex-gyre-fonts
 	depends = texlive-fontsextra
+	depends = ttc-iosevka-mithic
 	depends = ttf-dejavu
 	depends = ttf-fira-code
 	depends = ttf-inconsolata
-	depends = ttf-iosevka-mithic
 	depends = ttf-jetbrains-mono
 	depends = ttf-liberation
 	depends = ttf-twemoji
