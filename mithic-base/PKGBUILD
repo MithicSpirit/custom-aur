@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.11.10
+pkgver=2022.12.12
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
@@ -81,7 +81,6 @@ package() {
 		'btop'
 		'clang'
 		'checkupdates+aur'
-		'coq'
 		'cups'
 		'cups-pdf'
 		'devour'
@@ -143,6 +142,7 @@ package() {
 		'which'
 		'wine-staging'
 		'xautolock'
+		'z'
 		'zathura'
 
 		'archlinux-artwork'
@@ -515,6 +515,7 @@ package() {
 		'vulkan-radeon: If using AMD GPU'
 		'xf86-input-wacom: If using Wacom tablet'
 
+		'agda: Agda'
 		'aspell-en: Doom Emacs'
 		'aspell: Doom Emacs'
 		'bash-language-server: Doom Emacs/Bash'
@@ -523,17 +524,20 @@ package() {
 		'cabal-install: Haskell'
 		'ccls: Doom Emacs/C*'
 		'cmake: Doom Emacs'
+		'coq: Coq'
 		'cppcheck: Doom Emacs/C*'
 		'editorconfig-core-c: Doom Emacs'
 		'flake8: Python'
 		'gdb: C*'
 		'ghc: Haskell'
 		'gnu-apl: APL'
+		'gprolog: Prolog'
 		'gradle: Java'
 		'haskell-language-server: Doom Emacs/Haskell'
 		'hlint: Doom Emacs/Haskell'
 		'hoogle: Haskell'
 		'hyphen-en: Doom Emacs'
+		'idris2-git: Idris'
 		'indent: C*'
 		'jd-gui: Java'
 		'jdk-openjdk: Java'
@@ -571,6 +575,7 @@ package() {
 		'rustup: Rust'
 		'samarium: Samarium'
 		'shellcheck: Doom Emacs/Bash'
+		'stack: Haskell'
 		'strace: C*'
 		'stylelint-config-recommended: Doom Emacs/CSS'
 		'stylelint: Doom Emacs/CSS'
@@ -586,14 +591,15 @@ package() {
 
 		'gamemode: Gaming'
 		'lib32-mangohud-git: Gaming'
-		'linux-xanmod-edge-headers: Gaming'
-		'linux-xanmod-edge: Gaming'
+		'linux-xanmod-headers: Gaming'
+		'linux-xanmod: Gaming'
 		'linux-zen-headers: Gaming'
 		'linux-zen: Gaming'
 		'lutris: Gaming'
 		'mangohud-git: Gaming'
 		'openrct2: Gaming'
 		'path-of-building-community-git: Gaming'
+		'prismlauncher-git: Gaming'
 		'protonfixes-git: Gaming'
 		'protontricks: Gaming'
 		'protonup-git: Gaming'
@@ -644,7 +650,7 @@ package() {
 		'pdftk: CLI for PDF manipulation'
 		'peek: GIF screen recorder'
 		'pkgstats: Archlinux telemetry *spooky*'
-		'popsicle-git: Image burner'
+		'popsicle: Image burner'
 		'qemu-full: Virtualization'
 		'qutebrowser: Alternative browser'
 		'raven-reader: RSS reader'
