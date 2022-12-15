@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.12.12
+pkgver=2022.12.14
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit.'
 arch=(any)
@@ -130,7 +130,6 @@ package() {
 		'ripgrep'
 		'rmtrash'
 		'rofi-greenclip'
-		'starship'
 		'sxiv'
 		'systemsettings'
 		'texlive-bibtexextra'
@@ -152,7 +151,7 @@ package() {
 		'bitwarden'
 		'bottom-git'
 		'chromium'
-		'deadbeef-git'
+		'deadbeef'
 		'deadbeef-mpris2-plugin'
 		'debuginfod'
 		'diskmonitor'
@@ -571,6 +570,7 @@ package() {
 		'python-pytest: Doom Emacs/Python'
 		'python-requests: Python'
 		'python-z3-solver: Python'
+		'ruff: Python'
 		'rust-analyzer: Doom Emacs/Rust'
 		'rustup: Rust'
 		'samarium: Samarium'
@@ -590,6 +590,9 @@ package() {
 		'yaml-language-server: Doom Emacs/YAML'
 
 		'gamemode: Gaming'
+		'jdk17-openjdk: Gaming/Minecraft'
+		'glfw-x11: Gaming/Minecraft'
+		'glfw-wayland: Gaming/Minecraft'
 		'lib32-mangohud-git: Gaming'
 		'linux-xanmod-headers: Gaming'
 		'linux-xanmod: Gaming'
@@ -597,9 +600,10 @@ package() {
 		'linux-zen: Gaming'
 		'lutris: Gaming'
 		'mangohud-git: Gaming'
-		'openrct2: Gaming'
-		'path-of-building-community-git: Gaming'
-		'prismlauncher-git: Gaming'
+		'openal: Gaming/Minecraft'
+		'openrct2: Gaming/RCT2'
+		'path-of-building-community-git: Gaming/PoE'
+		'prismlauncher-qt5-git: Gaming/Minecraft'
 		'protonfixes-git: Gaming'
 		'protontricks: Gaming'
 		'protonup-git: Gaming'
@@ -608,6 +612,7 @@ package() {
 		'steam-screensaver-fix: Gaming'
 		'steam: Gaming'
 		'steamtinkerlaunch: Gaming'
+		'visualvm: Gaming/Minecraft'
 
 		'amfora: Gemini browser'
 		'appflowy-git: Notetaking'
