@@ -31,3 +31,6 @@
 [submodule "sc-im-git"]
 	path = sc-im-git
 	url = ssh://aur@aur.archlinux.org/sc-im-git.git
+[submodule "python-crossandra"]
+	path = python-crossandra
+	url = ssh://aur@aur.archlinux.org/python-crossandra.git
