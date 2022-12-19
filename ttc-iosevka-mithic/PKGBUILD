@@ -5,9 +5,9 @@
 _pkgname=iosevka
 pkgname=ttc-${_pkgname}-mithic
 _commit_id=\
-5fe08d620434d7aa9219908e3eedd3de50a2ebf0
+32f16dfa982bca5b00a19f877108e04933d85cad
 _pkgname_id="${_pkgname}-${_commit_id}"
-pkgver=16.4.0.0
+pkgver=16.8.2.0
 pkgrel=1
 replaces=("ttf-${pkgname##ttc-}")
 pkgdesc='A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.'
@@ -17,7 +17,7 @@ license=('custom:OFL')
 makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint')
 source=("${_pkgname_id}.tar.gz::https://github.com/MithicSpirit/${_pkgname}/archive/${_commit_id}.tar.gz" 
         get-makeflags.js)
-sha256sums=('cdd10ec1f6e52a2cc86fdefe0bd64f352c4b19c9afec2d68fb291c70ad5c4cac'
+sha256sums=('971e9739a6490ddaa394a047b746885eb97ac96bcac5cb24554e7b27a2cfefd6'
             '60d2f9eb2b2f5213da1eaad96fa0466954ac1be89cb02143d0035f6ea741c8a2')
 
 build () {
