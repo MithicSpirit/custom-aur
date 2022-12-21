@@ -1,9 +1,9 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.12.14.3
+pkgver=2022.12.21.1
 pkgrel=1
-pkgdesc='Packages for a base install for MithicSpirit.'
+pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
 depends=()
 optdepends=()
@@ -272,6 +272,7 @@ package() {
 		'ttf-dejavu'
 		'ttf-fira-code'
 		'ttf-inconsolata'
+		'ttf-iosevka-nerd'
 		'ttf-jetbrains-mono'
 		'ttf-liberation'
 		'ttf-twemoji'
