@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.12.21.1
+pkgver=2022.12.22.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -143,6 +143,9 @@ package() {
 		'which'
 		'wine-staging'
 		'xautolock'
+		'xdg-desktop-portal'
+		'xdg-desktop-portal-gtk'
+		'xdg-desktop-portal-kde'
 		'z'
 		'zathura'
 
@@ -525,7 +528,6 @@ package() {
 		'bash-language-server: Doom Emacs/Bash'
 		'biber: LaTeX'
 		'brittany: Doom Emacs/Haskell'
-		'cabal-install: Haskell'
 		'cargo-cache: Rust'
 		'ccls: Doom Emacs/C*'
 		'cmake: Doom Emacs'
@@ -535,11 +537,10 @@ package() {
 		'elan-lean: Lean'
 		'flake8: Python'
 		'gdb: C*'
-		'ghc: Haskell'
+		'ghcup-hs-bin: Haskell'
 		'gnu-apl: APL'
 		'gprolog: Prolog'
 		'gradle: Java'
-		'haskell-language-server: Doom Emacs/Haskell'
 		'hlint: Doom Emacs/Haskell'
 		'hoogle: Haskell'
 		'hyphen-en: Doom Emacs'
@@ -591,7 +592,6 @@ package() {
 		'scc: SLOC'
 		'shellcheck: Doom Emacs/Bash'
 		'shfmt: Shell scripting'
-		'stack: Haskell'
 		'strace: C*'
 		'stylelint-config-recommended: Doom Emacs/CSS'
 		'stylelint: Doom Emacs/CSS'
