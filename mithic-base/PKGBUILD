@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2022.12.24.1
+pkgver=2023.01.04.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -193,7 +193,8 @@ package() {
 		'kalendar'
 		'kgpg'
 		'korganizer'
-		'kondo'
+		'kondo-git'
+		'kondo-ui-git'
 		'libreoffice-fresh'
 		'libvterm'
 		'lostfiles'
