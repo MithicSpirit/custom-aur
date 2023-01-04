@@ -34,3 +34,6 @@
 [submodule "python-crossandra"]
 	path = python-crossandra
 	url = ssh://aur@aur.archlinux.org/python-crossandra.git
+[submodule "kondo-git"]
+	path = kondo-git
+	url = ssh://aur@aur.archlinux.org/kondo-git.git
