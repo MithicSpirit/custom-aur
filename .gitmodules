@@ -10,9 +10,6 @@
 [submodule "salad"]
 	path = salad
 	url = ssh://aur@aur.archlinux.org/salad.git
-[submodule "nyxt-browser-git"]
-	path = nyxt-browser-git
-	url = ssh://aur@aur.archlinux.org/nyxt-browser-git.git
 [submodule "python-pincer-git"]
 	path = python-pincer-git
 	url = ssh://aur@aur.archlinux.org/python-pincer-git.git
@@ -37,3 +34,6 @@
 [submodule "kondo-git"]
 	path = kondo-git
 	url = ssh://aur@aur.archlinux.org/kondo-git.git
+[submodule "nyxt-git"]
+	path = nyxt-git
+	url = ssh://aur@aur.archlinux.org/nyxt-git.git
