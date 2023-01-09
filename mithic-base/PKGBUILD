@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.01.04.1
+pkgver=2023.01.08.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -668,7 +668,7 @@ package() {
 		'mathics: Computer algebra system'
 		'musescore: Composing music'
 		'nutty: Local network scanner'
-		'nyxt-browser-git: Alternative browser'
+		'nyxt-git: Alternative browser'
 		'okular: Alternative document viewer'
 		'olive: Video editor'
 		'onionshare: Share files through TOR'

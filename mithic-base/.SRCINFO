@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.01.04.1
+	pkgver = 2023.01.08.1
 	pkgrel = 1
 	arch = any
 
@@ -636,7 +636,7 @@ pkgname = mithic-base
 	optdepends = mathics: Computer algebra system
 	optdepends = musescore: Composing music
 	optdepends = nutty: Local network scanner
-	optdepends = nyxt-browser-git: Alternative browser
+	optdepends = nyxt-git: Alternative browser
 	optdepends = okular: Alternative document viewer
 	optdepends = olive: Video editor
 	optdepends = onionshare: Share files through TOR
