@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.01.08.1
+pkgver=2023.01.10.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -71,13 +71,11 @@ package() {
 		'arc-gtk-theme'
 		'arc-icon-theme'
 		'arch-install-scripts'
-		'autojump'
 		'autotrash'
 		'bat'
 		'bat-extras'
 		'betterlockscreen-git'
 		'breeze'
-		'breeze-grub-mithic'
 		'breeze-gtk'
 		'btop'
 		'clang'
@@ -93,12 +91,14 @@ package() {
 		'dunst-git'
 		'emacs-nativecomp'
 		'exa'
+		'fasd'
 		'fd'
 		'feh'
 		'findutils'
 		'flameshot-git'
 		'git'
 		'gpm'
+		'grub-theme-minegrub-git'
 		'kde-gtk-config'
 		'kdeconnect'
 		'kmail'
@@ -146,7 +146,6 @@ package() {
 		'xdg-desktop-portal'
 		'xdg-desktop-portal-gtk'
 		'xdg-desktop-portal-kde'
-		'z'
 		'zathura'
 
 		'archlinux-artwork'
@@ -493,7 +492,6 @@ package() {
 		'pstoedit'
 		'psutils'
 		'python-bidi'
-		'python-black'
 		'python-chardet'
 		'python-dbus-next'
 		'python-psutil'
@@ -547,6 +545,7 @@ package() {
 		'hyphen-en: Doom Emacs'
 		'idris2-git: Idris'
 		'indent: C*'
+		'j9-git: J'
 		'jd-gui: Java'
 		'jdk-openjdk: Java'
 		'jupyter-notebook: Python'
@@ -573,7 +572,7 @@ package() {
 		'pypy3: Python'
 		'python-grip: Doom Emacs/Markdown'
 		'python-isort: Doom Emacs/Python'
-		'python-lsp-black: Doom Emacs/Python'
+		'python-lsp-ruff: Doom Emacs/Python'
 		'python-lsp-server: Doom Emacs/Python'
 		'python-nose: Doom Emacs/Python'
 		'python-pbar: Python'
