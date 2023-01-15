@@ -37,3 +37,6 @@
 [submodule "nyxt-git"]
 	path = nyxt-git
 	url = ssh://aur@aur.archlinux.org/nyxt-git.git
+[submodule "spim-svn"]
+	path = spim-svn
+	url = ssh://aur@aur.archlinux.org/spim-svn.git
