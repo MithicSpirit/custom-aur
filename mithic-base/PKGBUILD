@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.01.10.1
+pkgver=2023.02.12.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -13,6 +13,7 @@ package() {
 		'accountsservice'
 		'alacritty'
 		'base'
+		'base-devel'
 		'cronie'
 		'curl'
 		'dash'
@@ -41,6 +42,7 @@ package() {
 		'man-pages'
 		'mesa'
 		'mesa-vdpau'
+		'multilib-devel'
 		'notification-daemon'
 		'ntfs-3g'
 		'numlockx'
@@ -101,6 +103,7 @@ package() {
 		'grub-theme-minegrub-git'
 		'kde-gtk-config'
 		'kdeconnect'
+		'kdialog'
 		'kmail'
 		'kvantum'
 		'libnotify'
@@ -155,7 +158,7 @@ package() {
 		'bitwarden'
 		'bluez-utils'
 		'bottom'
-		'chromium'
+		'ungoogled-chromium-bin'
 		'deadbeef'
 		'deadbeef-mpris2-plugin'
 		'debuginfod'
@@ -283,32 +286,6 @@ package() {
 		'ttf-twemoji'
 		'ttf-ubuntu-font-family'
 		'xorg-fonts-misc'
-
-		# base-devel
-		'autoconf'
-		'automake'
-		'binutils'
-		'bison'
-		'fakeroot'
-		'file'
-		'findutils'
-		'flex'
-		'gawk'
-		'gcc'
-		'gettext'
-		'grep'
-		'groff'
-		'gzip'
-		'libtool'
-		'm4'
-		'make'
-		'pacman'
-		'patch'
-		'pkgconf'
-		'sed'
-		'sudo'
-		'texinfo'
-		'which'
 
 		# linux-tools
 		'bootconfig'
@@ -507,6 +484,7 @@ package() {
 		'zathura-ps'
 	)
 	optdepends+=(
+		# Device support
 		'amd-ucode: If using AMD CPU'
 		'amdfand: If using AMD discrete GPU'
 		'amdgui-helper: If using AMD discrete GPU'
@@ -523,11 +501,11 @@ package() {
 		'vulkan-radeon: If using AMD GPU'
 		'xf86-input-wacom: If using Wacom tablet'
 
+		# Programming
 		'aspell-en: Doom Emacs'
 		'aspell: Doom Emacs'
 		'bash-language-server: Doom Emacs/Bash'
 		'biber: LaTeX'
-		'brittany: Doom Emacs/Haskell'
 		'cargo-cache: Rust'
 		'ccls: Doom Emacs/C*'
 		'cmake: Doom Emacs'
@@ -541,7 +519,6 @@ package() {
 		'gnu-apl: APL'
 		'gprolog: Prolog'
 		'gradle: Java'
-		'hoogle: Haskell'
 		'hyphen-en: Doom Emacs'
 		'idris2-git: Idris'
 		'indent: C*'
@@ -570,6 +547,7 @@ package() {
 		'octave: Octave/Matlab'
 		'pijul: Pijul'
 		'pypy3: Python'
+		'python-black: Python'
 		'python-grip: Doom Emacs/Markdown'
 		'python-isort: Doom Emacs/Python'
 		'python-lsp-ruff: Doom Emacs/Python'
@@ -584,14 +562,12 @@ package() {
 		'python-requests: Python'
 		'python-z3-solver: Python'
 		'ruff: Python'
-		'rust-analyzer: Doom Emacs/Rust'
 		'rustup: Rust'
-		'rustfmt: Rust'
 		'samarium: Samarium'
-		'scala: Scala'
 		'scc: SLOC'
 		'shellcheck: Doom Emacs/Bash'
 		'shfmt: Shell scripting'
+		'spim-svn: MIPS32 emulation'
 		'strace: C*'
 		'stylelint-config-recommended: Doom Emacs/CSS'
 		'stylelint: Doom Emacs/CSS'
@@ -607,6 +583,7 @@ package() {
 		'wordnet-cli: Doom Emacs'
 		'yaml-language-server: Doom Emacs/YAML'
 
+		# Gaming
 		'gamemode: Gaming'
 		'jdk17-openjdk: Gaming/Minecraft'
 		'glfw-x11: Gaming/Minecraft'
@@ -631,8 +608,11 @@ package() {
 		'steam-screensaver-fix: Gaming'
 		'steam: Gaming'
 		'steamtinkerlaunch: Gaming'
+		'tesseract: Gaming/Warframe/wfinfo-ng'
+		'tesseract-data-eng: Gaming/Warframe/wfinfo-ng'
 		'visualvm: Gaming/Minecraft'
 
+		# Miscellaneous
 		'amfora: Gemini browser'
 		'appflowy-git: Notetaking'
 		'blender: 3D Modeling'
@@ -701,12 +681,14 @@ package() {
 		'xmrig: Miner'
 		'z3: Proof assistant'
 
+		# Optdepends
 		'gfm: TiLP optdepend'
 		'gifski: Peek optdepend'
 		'noise-suppression-for-voice: Kdenlive optdepend'
 		'nyrna: Steamtinkerlaunch optdepend'
 		'racket: Idris optdepend'
 
+		# Fun/why?
 		'c-lolcat: Fun'
 		'cmatrix: Fun'
 		'cowsay: Fun'
