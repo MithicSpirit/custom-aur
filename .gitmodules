@@ -46,3 +46,6 @@
 [submodule "idris2-git"]
 	path = idris2-git
 	url = git@github.com:MithicSpirit/idris2-git.git
+[submodule "helixbinhx"]
+	path = helixbinhx
+	url = ssh://aur@aur.archlinux.org/helixbinhx.git
