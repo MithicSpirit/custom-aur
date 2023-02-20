@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.02.12.1
+pkgver=2023.02.19.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -59,6 +59,7 @@ package() {
 		'texinfo'
 		'trash-cli'
 		'util-linux'
+		'web-greeter'
 		'wireplumber'
 		'xclip'
 		'xdg-user-dirs'
@@ -211,6 +212,7 @@ package() {
 		'namcap'
 		'neofetch'
 		'net-tools'
+		'nix'
 		'nmap'
 		'pacgraph'
 		'perl-rename'
@@ -507,6 +509,7 @@ package() {
 		'bash-language-server: Doom Emacs/Bash'
 		'biber: LaTeX'
 		'cargo-cache: Rust'
+		'cargo-shuttle: Rust'
 		'ccls: Doom Emacs/C*'
 		'cmake: Doom Emacs'
 		'coq: Coq'
@@ -519,8 +522,11 @@ package() {
 		'gnu-apl: APL'
 		'gprolog: Prolog'
 		'gradle: Java'
+		'helix: Helix'
+		'helixbinhx: Helix'
 		'hyphen-en: Doom Emacs'
 		'idris2-git: Idris'
+		'idris2-lsp-git: Doom Emacs/Idris'
 		'indent: C*'
 		'j9-git: J'
 		'jd-gui: Java'
@@ -561,6 +567,7 @@ package() {
 		'python-pytest: Doom Emacs/Python'
 		'python-requests: Python'
 		'python-z3-solver: Python'
+		'qtspim: MIPS32 emulation'
 		'ruff: Python'
 		'rustup: Rust'
 		'samarium: Samarium'
@@ -588,13 +595,13 @@ package() {
 		'jdk17-openjdk: Gaming/Minecraft'
 		'glfw-x11: Gaming/Minecraft'
 		'glfw-wayland: Gaming/Minecraft'
-		'lib32-mangohud-git: Gaming'
+		'lib32-mangohud: Gaming'
 		'linux-xanmod-headers: Gaming'
 		'linux-xanmod: Gaming'
 		'linux-zen-headers: Gaming'
 		'linux-zen: Gaming'
 		'lutris: Gaming'
-		'mangohud-git: Gaming'
+		'mangohud: Gaming'
 		'mcaselector: Gaming/Minecraft'
 		'openal: Gaming/Minecraft'
 		'openrct2: Gaming/RCT2'
