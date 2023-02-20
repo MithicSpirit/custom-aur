@@ -1,8 +1,7 @@
-*
-**/*
+/*
 
-!.gitignore
-!PKGBUILD
-!.SRCINFO
+!/.gitignore
+!/PKGBUILD
+!/.SRCINFO
 
-!get-makeflags.js
+!/get-makeflags.js
