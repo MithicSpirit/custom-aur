@@ -49,3 +49,9 @@
 [submodule "helixbinhx"]
 	path = helixbinhx
 	url = ssh://aur@aur.archlinux.org/helixbinhx.git
+[submodule "greenclip"]
+	path = greenclip
+	url = ssh://aur@aur.archlinux.org/greenclip
+[submodule "haskell-wordexp"]
+	path = haskell-wordexp
+	url = ssh://aur@aur.archlinux.org/haskell-wordexp
