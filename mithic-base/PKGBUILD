@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.02.19.1
+pkgver=2023.03.12.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -101,6 +101,7 @@ package() {
 		'flameshot-git'
 		'git'
 		'gpm'
+		'greenclip'
 		'grub-theme-minegrub-git'
 		'kde-gtk-config'
 		'kdeconnect'
@@ -135,7 +136,6 @@ package() {
 		'rebuild-detector'
 		'ripgrep'
 		'rmtrash'
-		'rofi-greenclip'
 		'sxiv'
 		'systemsettings'
 		'texlive-bibtexextra'
@@ -152,6 +152,7 @@ package() {
 		'xdg-desktop-portal-kde'
 		'zathura'
 
+		'arch-hs'
 		'archlinux-artwork'
 		'authy'
 		'autokey-gtk'
@@ -207,6 +208,7 @@ package() {
 		'mediainfo'
 		'menu-qalc'
 		'mesa-demos'
+		'moreutils'
 		'mpv-mpris'
 		'mtr'
 		'namcap'
@@ -556,9 +558,11 @@ package() {
 		'python-black: Python'
 		'python-grip: Doom Emacs/Markdown'
 		'python-isort: Doom Emacs/Python'
+		'python-ixia: Python'
 		'python-lsp-ruff: Doom Emacs/Python'
 		'python-lsp-server: Doom Emacs/Python'
 		'python-nose: Doom Emacs/Python'
+		'python-paperbush: Python'
 		'python-pbar: Python'
 		'python-pincer-git: Doom Emacs/Python'
 		'python-pipe: Python'
