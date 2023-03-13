@@ -55,3 +55,9 @@
 [submodule "haskell-wordexp"]
 	path = haskell-wordexp
 	url = ssh://aur@aur.archlinux.org/haskell-wordexp
+[submodule "python-ixia"]
+	path = python-ixia
+	url = ssh://aur@aur.archlinux.org/python-ixia
+[submodule "python-paperbush"]
+	path = python-paperbush
+	url = ssh://aur@aur.archlinux.org/python-paperbush
