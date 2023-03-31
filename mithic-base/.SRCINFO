@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.03.12.0
+	pkgver = 2023.03.31.0
 	pkgrel = 1
 	arch = any
 
@@ -46,6 +46,8 @@ pkgname = mithic-base
 	depends = paru-git
 	depends = picom-git
 	depends = pipewire
+	depends = pipewire-jack
+	depends = pipewire-pulse
 	depends = python
 	depends = qtile
 	depends = redshift
@@ -508,7 +510,7 @@ pkgname = mithic-base
 	optdepends = languagetool: Doom Emacs
 	optdepends = lazygit: Astronvim
 	optdepends = lilypond: Lilypond
-	optdepends = lld: C*
+	optdepends = lld: Haskell/C*
 	optdepends = lldb: C*
 	optdepends = llvm: C*
 	optdepends = manim: Manim

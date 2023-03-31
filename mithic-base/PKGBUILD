@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.03.12.0
+pkgver=2023.03.31.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -51,6 +51,8 @@ package() {
 		'paru-git'
 		'picom-git'
 		'pipewire'
+		'pipewire-jack'
+		'pipewire-pulse'
 		'python'
 		'qtile'
 		'redshift'
@@ -538,7 +540,7 @@ package() {
 		'languagetool: Doom Emacs'
 		'lazygit: Astronvim'
 		'lilypond: Lilypond'
-		'lld: C*'
+		'lld: Haskell/C*'
 		'lldb: C*'
 		'llvm: C*'
 		'manim: Manim'
