@@ -5,9 +5,9 @@
 _pkgname=iosevka
 pkgname=ttc-${_pkgname}-mithic
 _commit_id=\
-f0372269d978abf203bc951b642f5827976371bd
+7ab4f46a5a9df33d6261d33297edd46a779fa66a
 _pkgname_id="${_pkgname}-${_commit_id}"
-pkgver=20.0.0.0
+pkgver=21.1.1.0
 pkgrel=1
 replaces=("ttf-${pkgname##ttc-}")
 pkgdesc='A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.'
@@ -15,25 +15,25 @@ arch=('any')
 url='https://be5invis.github.io/Iosevka/'
 license=('custom:OFL')
 makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint')
-source=("${_pkgname_id}.tar.gz::https://github.com/MithicSpirit/${_pkgname}/archive/${_commit_id}.tar.gz" 
+source=("${_pkgname_id}.tar.gz::https://github.com/MithicSpirit/${_pkgname}/archive/${_commit_id}.tar.gz"
         get-makeflags.js)
-sha256sums=('8eea0ec9773ac187f1baf0b22aa2c30a3eaa001b91b4d4ff70978b37b3139451'
-            '60d2f9eb2b2f5213da1eaad96fa0466954ac1be89cb02143d0035f6ea741c8a2')
+sha512sums=('9cc227c7f58ab6489c11c5c5d01531f91a2b3fd54dd64ac3a60270d3a2f7edd3a37e65bc88cb4e9a2bd9c81a99b49e88c107d5916cc8edcf7005f1aee805a88a'
+            '167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f')
 
 build () {
-    cd "${srcdir}/${_pkgname_id}"
-    npm install
+	cd "${srcdir}/${_pkgname_id}"
+	npm install
 
-    local _makeflags="$(../get-makeflags.js)"
-    [[ -z "$_makeflags" ]] && _makeflags="--jCmd=1"
+	local _makeflags="$(../get-makeflags.js)"
+	[[ -z "$_makeflags" ]] && _makeflags="--jCmd=1"
 
-    npm run build -- "$_makeflags" super-ttc::iosevka-mithic
+	npm run build -- "$_makeflags" super-ttc::iosevka-mithic
 }
 
 package () {
-    cd "${srcdir}/${_pkgname_id}"
-    install -d "${pkgdir}/usr/share/fonts/TTF/"
-    install -m644 dist/.super-ttc/*.ttc "${pkgdir}/usr/share/fonts/TTF/"
-    install -d "${pkgdir}/usr/share/licenses/${pkgname}"
-    install -m644 LICENSE.md "${pkgdir}/usr/share/licenses/${pkgname}/"
+	cd "${srcdir}/${_pkgname_id}"
+	install -d "${pkgdir}/usr/share/fonts/TTF/"
+	install -m644 dist/.super-ttc/*.ttc "${pkgdir}/usr/share/fonts/TTF/"
+	install -d "${pkgdir}/usr/share/licenses/${pkgname}"
+	install -m644 LICENSE.md "${pkgdir}/usr/share/licenses/${pkgname}/"
 }
