@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.03.31.0
+	pkgver = 2023.04.09.0
 	pkgrel = 1
 	arch = any
 
@@ -18,7 +18,6 @@ pkgname = mithic-base
 	depends = efibootmgr
 	depends = fail2ban
 	depends = flatpak
-	depends = flatpak-xdg-utils
 	depends = fwupd
 	depends = gnupg
 	depends = grub
