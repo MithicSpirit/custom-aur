@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.04.09.0
+pkgver=2023.04.10.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -149,7 +149,6 @@ package() {
 		'wine-staging'
 		'xautolock'
 		'xdg-desktop-portal'
-		'xdg-desktop-portal-gtk'
 		'xdg-desktop-portal-kde'
 		'zathura'
 
@@ -598,8 +597,6 @@ package() {
 		# Gaming
 		'gamemode: Gaming'
 		'jdk17-openjdk: Gaming/Minecraft'
-		'glfw-x11: Gaming/Minecraft'
-		'glfw-wayland: Gaming/Minecraft'
 		'lib32-mangohud: Gaming'
 		'linux-xanmod-headers: Gaming'
 		'linux-xanmod: Gaming'
@@ -608,10 +605,8 @@ package() {
 		'lutris: Gaming'
 		'mangohud: Gaming'
 		'mcaselector: Gaming/Minecraft'
-		'openal: Gaming/Minecraft'
 		'openrct2: Gaming/RCT2'
 		'path-of-building-community-git: Gaming/PoE'
-		'prismlauncher-qt5: Gaming/Minecraft'
 		'protonfixes-git: Gaming'
 		'protontricks: Gaming'
 		'protonup-git: Gaming'
