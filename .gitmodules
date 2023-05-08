@@ -61,3 +61,6 @@
 [submodule "python-paperbush"]
 	path = python-paperbush
 	url = ssh://aur@aur.archlinux.org/python-paperbush
+[submodule "kitty-shade-transparency-patch"]
+	path = kitty-shade-transparency-patch
+	url = ssh://aur@aur.archlinux.org/kitty-shade-transparency-patch.git
