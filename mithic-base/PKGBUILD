@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.04.10.0
+pkgver=2023.05.07.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -114,6 +114,7 @@ package() {
 		'librewolf-bin'
 		'mlocate'
 		'mpv'
+		'neovide'
 		'neovim'
 		'network-manager-applet'
 		'networkmanager'
@@ -280,7 +281,7 @@ package() {
 		'terminus-font'
 		'tex-gyre-fonts'
 		'texlive-fontsextra'
-		'ttc-iosevka-mithic'
+		#'ttc-iosevka-mithic'
 		'ttf-dejavu'
 		'ttf-fira-code'
 		'ttf-inconsolata'
@@ -536,7 +537,6 @@ package() {
 		'jupyter-notebook: Python'
 		'kotlin: Kotlin'
 		'languagetool: Doom Emacs'
-		'lazygit: Astronvim'
 		'lilypond: Lilypond'
 		'lld: Haskell/C*'
 		'lldb: C*'
@@ -550,8 +550,6 @@ package() {
 		'mingw-w64-headers: Cross-compiling to Windows'
 		'mingw-w64-winpthreads: Cross-compiling to Windows'
 		'mypy: Python'
-		'ncdu: Astronvim'
-		'neovide: Astronvim'
 		'octave: Octave/Matlab'
 		'pijul: Pijul'
 		'pypy3: Python'
@@ -646,6 +644,7 @@ package() {
 		'inkscape: Vector graphics editor'
 		'iotop: Monitor process IO'
 		'kdenlive: Video editor'
+		'kitty-shade-transparency-patch: Alternative terminal'
 		'krita: Image editor'
 		'libguestfs: Virtualization'
 		'libsixel: Sixel'
