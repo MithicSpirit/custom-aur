@@ -1,6 +1,6 @@
 pkgbase = ttc-iosevka-mithic
-	pkgdesc = A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.
-	pkgver = 22.1.0.0
+	pkgdesc = A custom configuration of the Iosevka monospace font (with nerd symbols).
+	pkgver = 22.1.0.1
 	pkgrel = 1
 	url = https://be5invis.github.io/Iosevka/
 	arch = any
@@ -8,10 +8,14 @@ pkgbase = ttc-iosevka-mithic
 	makedepends = nodejs>=12.22.0
 	makedepends = npm
 	makedepends = ttfautohint
+	makedepends = fontforge
+	makedepends = python-argparse
 	replaces = ttf-iosevka-mithic
 	source = iosevka-896f72c4a1daa39c80d2f140710061b9269fbde7.tar.gz::https://github.com/MithicSpirit/iosevka/archive/896f72c4a1daa39c80d2f140710061b9269fbde7.tar.gz
+	source = nerd-patcher-3.0.0.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/FontPatcher.zip
 	source = get-makeflags.js
 	sha512sums = 0db6dad26a74cd9dba4c165a5f76011989a75ce0f7c35048477b44b217a305491d46894d7ec25797a5f250ea4a4380706cdf328baba98667bb1cd05ec9cf7b00
+	sha512sums = 472593c423ceb8351c5db22722e59273643a831b91590ee87226e5d6a721a2b7d009848dbba18698125ac528f7df063956e8f97c3b15e5cbc2996b78580ede25
 	sha512sums = 167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f
 
 pkgname = ttc-iosevka-mithic

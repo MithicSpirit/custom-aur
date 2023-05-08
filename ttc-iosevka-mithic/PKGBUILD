@@ -2,23 +2,34 @@
 # Contributor: Andy Kluger <https://t.me/andykluger>
 # Contributor: Markus Weimar <mail@markusweimar.de>
 
-_pkgname=iosevka
-pkgname=ttc-${_pkgname}-mithic
 _commit_id=\
 896f72c4a1daa39c80d2f140710061b9269fbde7
+_nerd_patcher_version=3.0.0
+
+_pkgname=iosevka
+pkgname=ttc-${_pkgname}-mithic
 _pkgname_id="${_pkgname}-${_commit_id}"
-pkgver=22.1.0.0
+_nerd_patcher="nerd-patcher-$_nerd_patcher_version"
+pkgver=22.1.0.1
 pkgrel=1
 replaces=("ttf-${pkgname##ttc-}")
-pkgdesc='A custom monospace sans-serif typeface inspired by Pragmata Pro, M+, PF DIN Mono.'
+pkgdesc='A custom configuration of the Iosevka monospace font (with nerd symbols).'
 arch=('any')
 url='https://be5invis.github.io/Iosevka/'
 license=('custom:OFL')
-makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint')
+makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint' 'fontforge'
+             'python-argparse')
 source=("${_pkgname_id}.tar.gz::https://github.com/MithicSpirit/${_pkgname}/archive/${_commit_id}.tar.gz"
+        "${_nerd_patcher}.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v${_nerd_patcher_version}/FontPatcher.zip"
         get-makeflags.js)
 sha512sums=('0db6dad26a74cd9dba4c165a5f76011989a75ce0f7c35048477b44b217a305491d46894d7ec25797a5f250ea4a4380706cdf328baba98667bb1cd05ec9cf7b00'
+            '472593c423ceb8351c5db22722e59273643a831b91590ee87226e5d6a721a2b7d009848dbba18698125ac528f7df063956e8f97c3b15e5cbc2996b78580ede25'
             '167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f')
+
+prepare() {
+	cd "${srcdir}"  # nerd patcher isn't in subdir
+	sed -i 's/\( *\)def setup_font_names(.*):/&\n\1    return/' font-patcher
+}
 
 build () {
 	cd "${srcdir}/${_pkgname_id}"
@@ -28,12 +39,17 @@ build () {
 	[[ -z "$_makeflags" ]] && _makeflags="--jCmd=1"
 
 	npm run build -- "$_makeflags" super-ttc::iosevka-mithic
+
+	cd "${srcdir}"  # nerd patcher isn't in subdir
+	./font-patcher --mono --complete --careful \
+		"${srcdir}/${_pkgname_id}/dist/.super-ttc/${_pkgname}-mithic.ttc"
 }
 
 package () {
-	cd "${srcdir}/${_pkgname_id}"
 	install -d "${pkgdir}/usr/share/fonts/TTF/"
-	install -m644 dist/.super-ttc/*.ttc "${pkgdir}/usr/share/fonts/TTF/"
-	install -d "${pkgdir}/usr/share/licenses/${pkgname}"
-	install -m644 LICENSE.md "${pkgdir}/usr/share/licenses/${pkgname}/"
+	install -m644 "${srcdir}/Iosevka Mithic.ttc" \
+		"${pkgdir}/usr/share/fonts/TTF/${_pkgname}-mithic.ttc"
+	install -d "${pkgdir}/usr/share/licenses/${pkgname}/"
+	install -m644 "${srcdir}/${_pkgname_id}/LICENSE.md" \
+		"${pkgdir}/usr/share/licenses/${pkgname}/"
 }
