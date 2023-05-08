@@ -2,7 +2,7 @@
 
 pkgname=mithic-base
 pkgver=2023.05.07.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
 depends=()
@@ -281,11 +281,10 @@ package() {
 		'terminus-font'
 		'tex-gyre-fonts'
 		'texlive-fontsextra'
-		#'ttc-iosevka-mithic'
+		'ttc-iosevka-mithic'
 		'ttf-dejavu'
 		'ttf-fira-code'
 		'ttf-inconsolata'
-		'ttf-iosevka-nerd'
 		'ttf-jetbrains-mono'
 		'ttf-liberation'
 		'ttf-twemoji'
