@@ -64,3 +64,6 @@
 [submodule "kitty-shade-transparency-patch"]
 	path = kitty-shade-transparency-patch
 	url = ssh://aur@aur.archlinux.org/kitty-shade-transparency-patch.git
+[submodule "grimshot-bin-sway"]
+	path = grimshot-bin-sway
+	url = ssh://aur@aur.archlinux.org/grimshot-bin-sway.git
