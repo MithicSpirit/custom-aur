@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.06.04.0
+pkgver=2023.06.05.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -128,7 +128,7 @@ package() {
 		'swaybg'
 		'swayidle'
 		'swayimg'
-		'swaylock'
+		'swaylock-effects'
 		'texlive-bibtexextra'
 		'time'
 		'tmux'

@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.06.04.0
+	pkgver = 2023.06.05.0
 	pkgrel = 1
 	arch = any
 
@@ -122,7 +122,7 @@ pkgname = mithic-base
 	depends = swaybg
 	depends = swayidle
 	depends = swayimg
-	depends = swaylock
+	depends = swaylock-effects
 	depends = texlive-bibtexextra
 	depends = time
 	depends = tmux
