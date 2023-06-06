@@ -67,3 +67,6 @@
 [submodule "grimshot-bin-sway"]
 	path = grimshot-bin-sway
 	url = ssh://aur@aur.archlinux.org/grimshot-bin-sway.git
+[submodule "lean-game-maker-git"]
+	path = lean-game-maker-git
+	url = ssh://aur@aur.archlinux.org/lean-game-maker-git.git
