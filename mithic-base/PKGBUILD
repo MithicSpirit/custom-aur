@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.06.05.0
+pkgver=2023.06.06.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -198,7 +198,6 @@ package() {
 		'namcap'
 		'neofetch'
 		'net-tools'
-		'nix'
 		'nmap'
 		'pacgraph'
 		'perl-rename'
