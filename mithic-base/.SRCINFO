@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.06.06.0
+	pkgver = 2023.06.06.1
 	pkgrel = 1
 	arch = any
 
@@ -95,6 +95,7 @@ pkgname = mithic-base
 	depends = libqalculate-git
 	depends = librewolf-bin
 	depends = logiops
+	depends = lxsession-gtk3
 	depends = mlocate
 	depends = mpv
 	depends = neovide
@@ -422,6 +423,7 @@ pkgname = mithic-base
 	optdepends = python-requests: Python
 	optdepends = python-z3-solver: Python
 	optdepends = qtspim: MIPS32 emulation
+	optdepends = rlwrap: Idris
 	optdepends = ruff: Python
 	optdepends = rustup: Rust
 	optdepends = samarium: Samarium

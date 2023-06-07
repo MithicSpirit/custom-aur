@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.06.06.0
+pkgver=2023.06.06.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -101,6 +101,7 @@ package() {
 		'libqalculate-git'
 		'librewolf-bin'
 		'logiops'
+		'lxsession-gtk3'
 		'mlocate'
 		'mpv'
 		'neovide'
@@ -443,6 +444,7 @@ package() {
 		'python-requests: Python'
 		'python-z3-solver: Python'
 		'qtspim: MIPS32 emulation'
+		'rlwrap: Idris'
 		'ruff: Python'
 		'rustup: Rust'
 		'samarium: Samarium'
