@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.07.16.0
+pkgver=2023.07.16.1
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -308,6 +308,25 @@ package() {
 		'texlive-pstricks'
 		'texlive-publishers'
 		'texlive-xetex'
+
+		# texlive-lang
+		'texlive-langarabic'
+		'texlive-langchinese'
+		'texlive-langcjk'
+		'texlive-langcyrillic'
+		'texlive-langczechslovak'
+		'texlive-langenglish'
+		'texlive-langeuropean'
+		'texlive-langfrench'
+		'texlive-langgerman'
+		'texlive-langgreek'
+		'texlive-langitalian'
+		'texlive-langjapanese'
+		'texlive-langkorean'
+		'texlive-langother'
+		'texlive-langpolish'
+		'texlive-langportuguese'
+		'texlive-langspanish'
 
 		# optdepends
 		'alsa-oss'
