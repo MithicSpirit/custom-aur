@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.07.16.1
+	pkgver = 2023.08.04.0
 	pkgrel = 1
 	arch = any
 
@@ -100,7 +100,6 @@ pkgname = mithic-base
 	depends = neovide
 	depends = neovim
 	depends = onedrive-abraunegg
-	depends = opencl-mesa
 	depends = pacman-contrib
 	depends = pandoc
 	depends = pavucontrol
@@ -112,7 +111,9 @@ pkgname = mithic-base
 	depends = python-wheel
 	depends = qalculate-gtk-git
 	depends = qt5-styleplugins
+	depends = qt5-wayland
 	depends = qt5ct
+	depends = qt6-wayland
 	depends = qt6ct
 	depends = qt6gtk2
 	depends = ranger-git

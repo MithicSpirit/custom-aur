@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.07.16.1
+pkgver=2023.08.04.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -106,7 +106,6 @@ package() {
 		'neovide'
 		'neovim'
 		'onedrive-abraunegg'
-		'opencl-mesa'
 		'pacman-contrib'
 		'pandoc'
 		'pavucontrol'
@@ -118,7 +117,9 @@ package() {
 		'python-wheel'
 		'qalculate-gtk-git'
 		'qt5-styleplugins'
+		'qt5-wayland'
 		'qt5ct'
+		'qt6-wayland'
 		'qt6ct'
 		'qt6gtk2'
 		'ranger-git'
