@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.08.04.0
+pkgver=2023.09.13.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -41,6 +41,7 @@ package() {
 		'mesa'
 		'mesa-vdpau'
 		'multilib-devel'
+		'neovim'
 		'networkmanager'
 		'ntfs-3g'
 		'openssh'
@@ -82,7 +83,7 @@ package() {
 		'devtools'
 		'dialog'
 		'dkms'
-		'dmenu-mithic'
+		'dmenu-mithic' #
 		'downgrade'
 		'emacs-nativecomp'
 		'exa'
@@ -94,8 +95,7 @@ package() {
 		'grimshot-bin-sway'
 		'grub-theme-minegrub-git'
 		'kdeconnect'
-		'kmail'
-		'kvantum'
+		'kvantum' #
 		'libnotify'
 		'libqalculate-git'
 		'librewolf-bin'
@@ -103,8 +103,7 @@ package() {
 		'lxsession-gtk3'
 		'mlocate'
 		'mpv'
-		'neovide'
-		'neovim'
+		'nvim-ft-pkgbuild'
 		'onedrive-abraunegg'
 		'pacman-contrib'
 		'pandoc'
@@ -118,9 +117,9 @@ package() {
 		'qalculate-gtk-git'
 		'qt5-styleplugins'
 		'qt5-wayland'
-		'qt5ct'
+		'qt5ct' #
 		'qt6-wayland'
-		'qt6ct'
+		'qt6ct' #
 		'qt6gtk2'
 		'ranger-git'
 		'rebuild-detector'
@@ -133,7 +132,7 @@ package() {
 		'time'
 		'tmux'
 		'torbrowser-launcher'
-		'ufw'
+		'ufw' #
 		'unzip'
 		'which'
 		'wine-staging'
@@ -181,7 +180,6 @@ package() {
 		'httpie'
 		'inetutils'
 		'ipython'
-		'korganizer'
 		'kondo-git'
 		'kondo-ui-git'
 		'libreoffice-fresh'
@@ -209,7 +207,7 @@ package() {
 		'python-numpy'
 		'python-pandas'
 		'python-pillow'
-		'python-pynvim'
+		'python-pipx'
 		'python-scipy'
 		'python-seaborn'
 		'python-sympy'
@@ -225,6 +223,7 @@ package() {
 		'system-config-printer'
 		'termdown'
 		'testdisk'
+		'thunderbird'
 		'tldr'
 		'tor'
 		'tree'
@@ -244,6 +243,7 @@ package() {
 		'wine-mono'
 		'winetricks'
 		'xdg-ninja-git'
+		'xorg-xev'
 		'xorg-xeyes'
 		'xorg-xprop'
 		'xournalpp-git'
@@ -414,6 +414,7 @@ package() {
 		'flake8: Python'
 		'gdb: C*'
 		'ghcup-hs-bin: Haskell'
+		'github-cli: Neovim/Mason'
 		'gnu-apl: APL'
 		'gprolog: Prolog'
 		'gradle: Java'
@@ -485,6 +486,7 @@ package() {
 		'vscodium: Visual studio code'
 		'wordnet-cli: Doom Emacs'
 		'yaml-language-server: Doom Emacs/YAML'
+		'zig: Zig'
 
 		# Gaming
 		'gamemode: Gaming'
@@ -534,13 +536,13 @@ package() {
 		'grub2-theme-preview: Grub theme previewer'
 		'handbrake-cli: Video transcoding'
 		'handbrake: Video transcoding'
+		'helvum: Pipewire patchbay'
 		'hexchat: IRC client'
 		'hplip: Improved HP printer support'
 		'hyperfine: Command bechmarking'
 		'icecat-bin: Alternative browser'
 		'inkscape: Vector graphics editor'
 		'iotop: Monitor process IO'
-		'kalendar: Simpler frontend for korganizer'
 		'kdenlive: Video editor'
 		'kitty-shade-transparency-patch: Alternative terminal'
 		'krita: Image editor'
@@ -555,6 +557,7 @@ package() {
 		'okular: Alternative document viewer'
 		'olive: Video editor'
 		'onionshare: Share files through TOR'
+		'pdfpc: PDF presentation presenter'
 		'pdftk: CLI for PDF manipulation'
 		'peek: GIF screen recorder'
 		'pkgstats: Archlinux telemetry *spooky*'
