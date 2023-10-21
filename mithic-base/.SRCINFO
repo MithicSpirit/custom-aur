@@ -1,6 +1,6 @@
 pkgbase = mithic-base
 	pkgdesc = Packages for a base install for MithicSpirit
-	pkgver = 2023.10.15.0
+	pkgver = 2023.10.21.0
 	pkgrel = 1
 	arch = any
 
@@ -140,7 +140,6 @@ pkgname = mithic-base
 	depends = bottom
 	depends = ungoogled-chromium-bin
 	depends = debuginfod
-	depends = diskmonitor
 	depends = docker
 	depends = dragon-drop
 	depends = duf
@@ -328,7 +327,7 @@ pkgname = mithic-base
 	depends = ipp-usb
 	depends = java-environment
 	depends = java-runtime
-	depends = kimageformats
+	depends = kimageformats5
 	depends = libcaca
 	depends = libmad
 	depends = libmythes

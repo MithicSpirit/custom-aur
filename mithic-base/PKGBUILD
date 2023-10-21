@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.10.15.0
+pkgver=2023.10.21.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -147,7 +147,6 @@ package() {
 		'bottom'
 		'ungoogled-chromium-bin'
 		'debuginfod'
-		'diskmonitor'
 		'docker'
 		'dragon-drop'
 		'duf'
@@ -344,7 +343,7 @@ package() {
 		'ipp-usb'
 		'java-environment'
 		'java-runtime'
-		'kimageformats'
+		'kimageformats5'
 		'libcaca'
 		'libmad'
 		'libmythes'
