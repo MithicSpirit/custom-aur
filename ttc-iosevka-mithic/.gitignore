@@ -4,4 +4,5 @@
 !/PKGBUILD
 !/.SRCINFO
 
+!/build-plans.toml
 !/get-makeflags.js

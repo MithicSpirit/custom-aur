@@ -1,0 +1,178 @@
+[buildPlans.iosevka-mithic]
+family = 'Iosevka Mithic'
+spacing = 'fontconfig-mono'
+serifs = 'sans'
+no-cv-ss = false
+no-ligation = false
+export-glyph-names = true
+
+  [buildPlans.iosevka-mithic.variants]
+  inherits = 'ss05'
+
+    [buildPlans.iosevka-mithic.variants.design]
+    apl-form = 'enable'
+    capital-d = 'standard-serifless'
+    capital-g = 'toothed-serifless-hooked'
+    capital-k = 'straight-serifless'
+    capital-m = 'hanging-serifless'
+    capital-q = 'crossing'
+    a = 'double-storey-serifless'
+    f = 'flat-hook-serifless-crossbar-at-x-height'
+    g = 'double-storey'
+    k = 'straight-serifless'
+    r = 'serifed'
+    t = 'flat-hook'
+    long-s = 'flat-hook-tailed-middle-serifed'
+    eszet = 'sulzbacher-tailed-middle-serifed'
+    lower-delta = 'flat-top'
+    capital-gamma = 'top-right-serifed'
+    lower-iota = 'tailed'
+    lower-lambda = 'straight'
+    lower-mu = 'toothed-serifless'
+    lower-chi = 'semi-chancery-straight'
+    zero = 'slashed-split'
+    four = 'closed'
+    tilde = 'low'
+    asterisk = 'penta-low'
+    underscore = 'high'
+    pilcrow = 'high'
+    caret = 'low'
+    brace = 'straight'
+    number-sign = 'upright'
+    ampersand = 'closed'
+    at = 'fourfold'
+    dollar = 'open'
+    cent = 'open'
+    punctuation-dot = 'square'
+    diacritic-dot = 'square'
+    partial-derivative = 'curly-bar'
+    micro-sign = 'toothed-serifless'
+    lig-ltgteq = 'flat'
+    lig-neq = 'slightly-slanted'
+    lig-equal-chain = 'with-notch'
+    lig-hyphen-chain = 'with-notch'
+    lig-double-arrow-bar = 'with-notch'
+    lig-single-arrow-bar = 'with-notch'
+
+    [buildPlans.iosevka-mithic.variants.italic]
+    a = 'single-storey-earless-corner-serifless'
+    b = 'toothless-corner-serifless'
+    d = 'toothless-corner-serifless'
+    e = 'rounded'
+    f = 'flat-hook-extended-crossbar-at-x-height'
+    g = 'single-storey-earless-corner'
+    i = 'serifed-flat-tailed'
+    k = 'cursive-serifless'
+    l = 'serifed-flat-tailed'
+    m = 'earless-corner-double-arch-serifless'
+    n = 'earless-corner-straight-serifless'
+    p = 'earless-corner-serifless'
+    q = 'earless-corner-straight-serifless'
+    r = 'serifless'
+    t = 'bent-hook'
+    u = 'toothless-corner-serifless'
+    v = 'cursive-serifless'
+    y = 'cursive-serifless'
+    lower-delta = 'rounded'
+    lower-iota = 'tailed-serifed'
+    lower-lambda = 'straight-turn'
+    lower-mu = 'toothless-corner-serifless'
+    lower-xi = 'rounded'
+    zero = 'dotted'
+    one = 'no-base'
+    six = 'straight-bar'
+    nine = 'straight-bar'
+    underscore = 'above-baseline'
+    ampersand = 'upper-open'
+    at = 'threefold'
+    percent = 'dots'
+    bar = 'force-upright'
+    punctuation-dot = 'round'
+    diacritic-dot = 'round'
+    micro-sign = 'toothless-corner-serifless'
+
+  [buildPlans.iosevka-mithic.ligations]
+  enables = [
+    'center-ops',
+    'arrow',
+    'arrow2',
+    'trig',
+    'eqeq',
+    'ineq',
+    'exeq',
+    'tildeeq',
+    'eqslasheq',
+    'ltgt-diamond',
+    'brst',
+    'slash-asterisk',
+    'plusplus',
+    'kern-dotty',
+    'kern-bars',
+    'logic',
+    'llgg',
+    'llggeq',
+    'bar-triggers-op-centering',
+    'html-comment',
+    'connected-underscore',
+    'connected-number-sign',
+    #'connected-tilde-as-wave',
+    #'connected-hyphen',
+  ]
+
+[buildPlans.iosevka-mithic.weights.thin]
+shape = 100
+menu = 100
+css = 100
+
+[buildPlans.iosevka-mithic.weights.extralight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.iosevka-mithic.weights.light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.iosevka-mithic.weights.regular]
+shape = 450
+menu = 400
+css = 400
+
+[buildPlans.iosevka-mithic.weights.book]
+shape = 450
+menu = 450
+css = 450
+
+[buildPlans.iosevka-mithic.weights.medium]
+shape = 525
+menu = 500
+css = 500
+
+[buildPlans.iosevka-mithic.weights.semibold]
+shape = 600
+menu = 600
+css = 600
+
+[buildPlans.iosevka-mithic.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.iosevka-mithic.weights.extrabold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.iosevka-mithic.weights.heavy]
+shape = 900
+menu = 900
+css = 900
+
+[buildPlans.iosevka-mithic.widths.normal]
+shape = 576
+menu = 5
+css = 'normal'
+
+[collectPlans.iosevka-mithic]
+from = ['iosevka-mithic']
