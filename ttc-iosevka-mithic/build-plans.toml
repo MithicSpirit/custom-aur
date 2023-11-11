@@ -2,6 +2,7 @@
 family = 'Iosevka Mithic'
 spacing = 'fontconfig-mono'
 serifs = 'sans'
+build-texture-feature = true
 no-cv-ss = false
 no-ligation = false
 export-glyph-names = true
