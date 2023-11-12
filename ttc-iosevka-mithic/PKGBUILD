@@ -12,7 +12,7 @@ _nerd_patcher="nerd-patcher-$_nerd_patcher_version"
 
 pkgname=ttc-${_pkgname}
 pkgver="${_iosevka_version}.nerd.${_nerd_patcher_version}.mithic.1"
-pkgrel=1
+pkgrel=2
 provides=('ttf-font-nerd')
 pkgdesc='A custom configuration of the Iosevka monospace font (with nerd symbols).'
 arch=('any')
@@ -26,7 +26,7 @@ source=("${_iosevka}.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/ta
         get-makeflags.js)
 sha512sums=('0cbd47671858b49baf67d389cac24171f9f80e7c684471208b3d29c56126512f9360bf309ffee8f8146113159b037b4f37fd5d1f763cca384fc2b3c1c4fdb66c'
             '2ec53b6353d36cb14f09f65090d74c038be1dfd26f1b53f4b2838618b4da7184ff76f69e24ffbad2197720f1351c03c9009f9e01d5b0f80c126f2e8b2def48c2'
-            'b3a63f45597db37727c287c9a9ecc6c23ab9eacce599b4977ad74ec2770c438cc7b262ca5116a9e7aefd5c6c7d922323a67eb8ca832b809d87af2475fe0203d2'
+            '560b0a2059b4892b798bed205c28f5fa64134b433507851f2022c23ad907208ea2833ce00d70d701583539abd5cc4ddecacc41973a5cbfc8a89b12c42c99ff6a'
             '167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f')
 
 prepare() {
