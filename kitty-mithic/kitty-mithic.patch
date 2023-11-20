@@ -52,7 +52,7 @@ index 5d760ca8c..dfdcc7f9c 100644
 +        if light:
 +            opacity -= 64
 +        if invert:
-+            opacity = 256 - opacity
++            opacity = 255 - opacity
 +
 +        for i in range(len(buf)):
 +            buf[i] = opacity
@@ -134,3 +134,16 @@ index 6af13d6a1..37d82b8d2 100644
      shell: str = '.'
      shell_integration: typing.FrozenSet[str] = frozenset({'enabled'})
      show_hyperlink_targets: bool = False
+diff --git a/terminfo/kitty.terminfo b/terminfo/kitty.terminfo
+index 317451ec7..60f054047 100644
+--- a/terminfo/kitty.terminfo
++++ b/terminfo/kitty.terminfo
+@@ -23,7 +23,7 @@ xterm-kitty|KovIdTTY,
+ 	bold=\E[1m,
+ 	cbt=\E[Z,
+ 	civis=\E[?25l,
+-	clear=\E[H\E[2J,
++	clear=\E[H\E[2J\E[3J,
+ 	cnorm=\E[?12h\E[?25h,
+ 	cr=^M,
+ 	csr=\E[%i%p1%d;%p2%dr,

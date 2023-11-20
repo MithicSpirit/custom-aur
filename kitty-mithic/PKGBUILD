@@ -5,34 +5,41 @@
 # Contributor: Maximilian Kindshofer <maximilian@kindshofer.net>
 
 _pkgbase=kitty
+_pkgver=0.31.0
+
 pkgbase="${_pkgbase}-mithic"
 pkgname=("${_pkgbase}-mithic" "${_pkgbase}-terminfo-mithic" "${_pkgbase}-shell-integration-mithic")
-pkgver=0.28.1
-pkgrel=1
+pkgver="${_pkgver}.mithic.1"
+pkgrel=2
 pkgdesc='A modern, hackable, featureful, OpenGL-based terminal emulator'
 arch=('x86_64')
 url='https://github.com/kovidgoyal/kitty'
 license=('GPL3')
 depends=('python3' 'freetype2'  'fontconfig' 'wayland' 'libx11'
          'libxkbcommon-x11' 'libxi' 'hicolor-icon-theme' 'libgl' 'dbus' 'lcms2'
-         'librsync')
+         'librsync' 'xxhash')
 makedepends=('libxinerama' 'libxcursor' 'libxrandr' 'wayland-protocols' 'go')
-source=("${_pkgbase}-${pkgver}.tar.xz::https://github.com/kovidgoyal/${_pkgbase}/releases/download/v${pkgver}/${_pkgbase}-${pkgver}.tar.xz"
-        "${_pkgbase}-${pkgver}.tar.xz.sig::https://github.com/kovidgoyal/${_pkgbase}/releases/download/v${pkgver}/${_pkgbase}-${pkgver}.tar.xz.sig"
+source=("${_pkgbase}-${_pkgver}.tar.xz::https://github.com/kovidgoyal/${_pkgbase}/releases/download/v${_pkgver}/${_pkgbase}-${_pkgver}.tar.xz"
+        "${_pkgbase}-${_pkgver}.tar.xz.sig::https://github.com/kovidgoyal/${_pkgbase}/releases/download/v${_pkgver}/${_pkgbase}-${_pkgver}.tar.xz.sig"
         "${_pkgbase}-mithic.patch")
-sha512sums=('a8863c8bf5a3c385671d98bd50481ffcd3984e45ee051173eb38de9aac79643e69a312e08b8f655759f3ecdfab4efe38dca39167f5590e482748b5e85dea5537'
+sha512sums=('3868431003f9f1a3907415124c1d8282b077985a9d104615d48f9d309f6fbf1a11119546674508649aa35f2b6e66aa5638024e8127f92ae7b043da367c7b3363'
             'SKIP'
-            '35c12144f49b106aa7603cc8062c09d57b95d74e24b88905f9b1ef97f9b197d6b817c30de24e37a7b9982ae86e92b6edc205e26f9e2a37acb0330fbd2f156c29')
-validpgpkeys=('3CE1780F78DD88DF45194FD706BC317B515ACE7C') # Kovid Goyal
+            '73f24f40847a5ea738f56fcf8a19c47a2ea5eb95327d877b49bb6e6657d47ce49b63dd2f1b7ec06d488364629d839f15d7461ed7a291c3bd5ab048245d7e3ac4')
+validpgpkeys=('3CE1780F78DD88DF45194FD706BC317B515ACE7C')  # Kovid Goyal
 
 prepare() {
-	cd "$srcdir/$_pkgbase-$pkgver"
+	cd "$srcdir/$_pkgbase-$_pkgver"
 	patch -p1 <"$srcdir/${_pkgbase}-mithic.patch"
 }
 
 build() {
-	cd "$srcdir/$_pkgbase-$pkgver"
-	python3 setup.py linux-package --update-check-interval=0 --ignore-compiler-warnings
+	cd "$srcdir/$_pkgbase-$_pkgver"
+	export CGO_CPPFLAGS="${CPPFLAGS}"
+	export CGO_CFLAGS="${CFLAGS}"
+	export CGO_CXXFLAGS="${CXXFLAGS}"
+	export CGO_LDFLAGS="${LDFLAGS}"
+	export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
+	python3 setup.py linux-package --update-check-interval=0
 }
 
 package_kitty-mithic() {
@@ -42,17 +49,18 @@ package_kitty-mithic() {
 	            'python-pygments: syntax highlighting in kitty +kitten diff'
 	            'libcanberra: playing "bell" sound on terminal bell')
 	provides=("${pkgname%%-mithic}")
+	conflicts=("${pkgname%%-mithic}")
 
-	cd "$srcdir/$_pkgbase-$pkgver"
+	cd "$srcdir/$_pkgbase-$_pkgver"
 
 	cp -r linux-package "${pkgdir}"/usr
 
 	# completions
-	python __main__.py + complete setup bash |
+	linux-package/bin/kitten __complete__ setup bash |
 		install -Dm644 /dev/stdin "${pkgdir}"/usr/share/bash-completion/completions/kitty
-	python __main__.py + complete setup fish |
+	linux-package/bin/kitten __complete__ setup fish |
 		install -Dm644 /dev/stdin "${pkgdir}"/usr/share/fish/vendor_completions.d/kitty.fish
-	python __main__.py + complete setup zsh |
+	linux-package/bin/kitten __complete__ setup zsh |
 		install -Dm644 /dev/stdin "${pkgdir}"/usr/share/zsh/site-functions/_kitty
 
 	install -Dm644 \
@@ -70,17 +78,19 @@ package_kitty-terminfo-mithic() {
 	pkgdesc='Terminfo for kitty, an OpenGL-based terminal emulator'
 	depends=('ncurses')
 	provides=("${pkgname%%-mithic}")
+	conflicts=("${pkgname%%-mithic}")
 
 	mkdir -p "$pkgdir/usr/share/terminfo"
 	tic -x -o "$pkgdir/usr/share/terminfo" \
-		"$_pkgbase-$pkgver/terminfo/kitty.terminfo"
+		"$_pkgbase-$_pkgver/terminfo/kitty.terminfo"
 }
 
 package_kitty-shell-integration-mithic() {
 	pkgdesc='Shell integration scripts for kitty, an OpenGL-based terminal emulator'
 	provides=("${pkgname%%-mithic}")
+	conflicts=("${pkgname%%-mithic}")
 
 	mkdir -p "$pkgdir/usr/lib/kitty/"
-	cp -r "$srcdir/$_pkgbase-$pkgver/shell-integration" \
+	cp -r "$srcdir/$_pkgbase-$_pkgver/shell-integration" \
 		"$pkgdir/usr/lib/kitty/"
 }
