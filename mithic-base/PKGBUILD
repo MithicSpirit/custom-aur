@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.10.21.0
+pkgver=2023.12.27.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -27,7 +27,6 @@ package() {
 		'fwupd'
 		'gammastep'
 		'gnupg'
-		'grub' #
 		'kwallet-pam'
 		'libva-mesa-driver'
 		'linux'
@@ -92,14 +91,12 @@ package() {
 		'git'
 		'gpm'
 		'grimshot-bin-sway'
-		'grub-theme-minegrub-git' #
 		'kdeconnect'
 		'kvantum' #
 		'libnotify'
 		'libqalculate-git'
 		'librewolf-bin'
 		'logiops'
-		'lxsession-gtk3'
 		'mlocate'
 		'mpv'
 		'nvim-ft-pkgbuild'
@@ -165,7 +162,6 @@ package() {
 		'glow'
 		'gnome-characters'
 		'gnuplot'
-		'grub-customizer' #
 		'gsmartcontrol'
 		'gst-plugins-bad'
 		'gst-plugins-base'
@@ -329,7 +325,6 @@ package() {
 
 		# optdepends
 		'alsa-oss'
-		'asp'
 		'atool'
 		'coin-or-mp'
 		'elementary-icon-theme'
@@ -357,7 +352,6 @@ package() {
 		'ncurses'
 		'opencv'
 		'opusfile'
-		'os-prober' #
 		'perl-image-exiftool'
 		'poppler'
 		'prettier'
