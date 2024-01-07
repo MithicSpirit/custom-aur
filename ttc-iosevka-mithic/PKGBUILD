@@ -11,8 +11,8 @@ _iosevka="Iosevka-${_iosevka_version}"
 _nerd_patcher="nerd-patcher-${_nerd_patcher_version}"
 
 pkgname="ttc-${_pkgname}"
-pkgver="${_iosevka_version}.nerd.${_nerd_patcher_version}.mithic.1"
-pkgrel=2
+pkgver="${_iosevka_version}.nerd.${_nerd_patcher_version}.mithic.0"
+pkgrel=1
 provides=('ttf-font-nerd')
 pkgdesc='A custom configuration of the Iosevka monospace font (with nerd symbols).'
 arch=('any')
@@ -43,11 +43,11 @@ build () {
 	local _makeflags="$(../get-makeflags.js)"
 	[[ -z "$_makeflags" ]] && _makeflags="--jCmd=1"
 
-	npm run build -- "$_makeflags" super-ttc::iosevka-mithic
+	npm run build -- "$_makeflags" super-ttc::IosevkaMithic
 
 	cd "${srcdir}"  # nerd patcher isn't in subdir
 	./font-patcher --mono --complete --careful \
-		"${srcdir}/${_iosevka}/dist/.super-ttc/${_pkgname}.ttc"
+		"${srcdir}/${_iosevka}/dist/.super-ttc/IosevkaMithic.ttc"
 }
 
 package () {

@@ -1,7 +1,7 @@
 pkgbase = ttc-iosevka-mithic
 	pkgdesc = A custom configuration of the Iosevka monospace font (with nerd symbols).
-	pkgver = 28.0.1.nerd.3.1.1.mithic.1
-	pkgrel = 2
+	pkgver = 28.0.1.nerd.3.1.1.mithic.0
+	pkgrel = 1
 	url = https://be5invis.github.io/Iosevka/
 	arch = any
 	license = custom:OFL
