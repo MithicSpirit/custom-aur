@@ -1,6 +1,6 @@
 pkgbase = ttc-iosevka-mithic
 	pkgdesc = A custom configuration of the Iosevka monospace font (with nerd symbols).
-	pkgver = 28.0.1.nerd.3.1.1.mithic.0
+	pkgver = 28.0.4.nerd.3.1.1.mithic.0
 	pkgrel = 1
 	url = https://be5invis.github.io/Iosevka/
 	arch = any
@@ -11,13 +11,13 @@ pkgbase = ttc-iosevka-mithic
 	makedepends = fontforge
 	makedepends = python-argparse
 	provides = ttf-font-nerd
-	source = Iosevka-28.0.1.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/tags/v28.0.1.tar.gz
+	source = Iosevka-28.0.4.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/tags/v28.0.4.tar.gz
 	source = nerd-patcher-3.1.1.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FontPatcher.zip
 	source = build-plans.toml
 	source = get-makeflags.js
-	sha512sums = dd63971939907bbcf725ff51442816e93ed3038b0407735821049ba8fde01ea3e5027b2a2f9b4533f9ce668e47549eb68ad4131c4de903af89688e0cababd09c
+	sha512sums = 43a1a73bb26749c218ae3661603e0a8f8abd8f59dfcd5e28e8f9b1ef2c1720689f6eb8414b047f831bbfcc1cff6c2a86f12aed6bba19faf2e1036394ad3326ec
 	sha512sums = 83c323a501372609b063826bf1749469676d1e2bb13f5ff9786f9e5941dd1bd8f68567a829b5b7b1ad8c6e4afe956a4a0f866e243101fde6b9667206351e8c43
-	sha512sums = 6a36c61ae24da6936c5161b90ad34726a773ac29cc92e1e9b37d0ca5dec16b6b48d8221a3f7017cdf3cb29b9f090eac0a4903fcb2cade7e86a7032a26be04088
+	sha512sums = 2589d7019db7ad21a9e15c6347abb14f364c11aa59c90ad16fb916ccbafd6db3f92e152ddd755a80b0e431623b60cdad0dc6cd6ffcc17a67cbe7493e4a02b7c4
 	sha512sums = 167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f
 
 pkgname = ttc-iosevka-mithic
