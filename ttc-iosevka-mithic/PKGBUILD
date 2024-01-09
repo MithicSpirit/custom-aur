@@ -12,14 +12,13 @@ _nerd_patcher="nerd-patcher-${_nerd_patcher_version}"
 
 pkgname="ttc-${_pkgname}"
 pkgver="${_iosevka_version}.nerd.${_nerd_patcher_version}.mithic.0"
-pkgrel=1
+pkgrel=2
 provides=('ttf-font-nerd')
 pkgdesc='A custom configuration of the Iosevka monospace font (with nerd symbols).'
 arch=('any')
 url='https://be5invis.github.io/Iosevka/'
 license=('custom:OFL')
-makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint' 'fontforge'
-             'python-argparse')
+makedepends=('nodejs>=12.22.0' 'npm' 'ttfautohint' 'fontforge')
 source=("${_iosevka}.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/tags/v${_iosevka_version}.tar.gz"
         "${_nerd_patcher}.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v${_nerd_patcher_version}/FontPatcher.zip"
         build-plans.toml
