@@ -52,6 +52,7 @@ exportGlyphNames = true
     lig-neq = 'slightly-slanted'
     lig-equal-chain = 'with-notch'
     lig-hyphen-chain = 'with-notch'
+    lig-plus-chain = 'with-notch'
     lig-double-arrow-bar = 'with-notch'
     lig-single-arrow-bar = 'with-notch'
 
@@ -94,30 +95,26 @@ exportGlyphNames = true
 
   [buildPlans.IosevkaMithic.ligations]
   enables = [
-    'center-ops',
-    'arrow',
-    'arrow2',
+    'arrow-l',
+    'arrow-r',
+    'arrow-lr',
     'trig',
     'eqeq',
     'lteq',
     'gteq',
     'exeq',
-    'eqslasheq',
     'ltgt-diamond',
     'brst',
     'slash-asterisk',
-    'plus-plus-plus',
     'kern-dotty',
     'kern-bars',
-    'logic',
     'llgg',
     'llggeq',
-    'bar-triggers-op-centering',
-    'html-comment',
-    'underscore-underscore',
-    'hash-hash',
     'tilde-tilde-tilde',
     #'minus-minus',
+    'plus-plus',
+    'underscore-underscore',
+    'hash-hash',
   ]
 
 [buildPlans.IosevkaMithic.weights.thin]
