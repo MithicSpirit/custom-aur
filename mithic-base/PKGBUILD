@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2023.12.27.0
+pkgver=2024.01.16.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -81,7 +81,6 @@ package() {
 		'devtools'
 		'dialog'
 		'dkms'
-		'dmenu-mithic' #
 		'downgrade'
 		'emacs-nativecomp'
 		'exa'
@@ -92,7 +91,6 @@ package() {
 		'gpm'
 		'grimshot-bin-sway'
 		'kdeconnect'
-		'kvantum' #
 		'libnotify'
 		'libqalculate-git'
 		'librewolf-bin'
@@ -113,9 +111,7 @@ package() {
 		'qalculate-gtk-git'
 		'qt5-styleplugins'
 		'qt5-wayland'
-		'qt5ct' #
 		'qt6-wayland'
-		'qt6ct' #
 		'qt6gtk2'
 		'ranger-git'
 		'rebuild-detector'
@@ -137,12 +133,11 @@ package() {
 
 		'arch-hs'
 		'archlinux-artwork'
-		'authy'
 		'bind'
 		'bitwarden'
 		'bluez-utils'
 		'bottom'
-		'ungoogled-chromium-bin'
+		'ungoogled-chromium'  # cachyos
 		'debuginfod'
 		'docker'
 		'dragon-drop'
@@ -167,7 +162,6 @@ package() {
 		'gst-plugins-base'
 		'gst-plugins-good'
 		'gst-plugins-ugly'
-		'gtk-vector-screenshot'
 		'gufw'
 		'htop'
 		'httpie'
