@@ -5,12 +5,12 @@
 # Contributor: Maximilian Kindshofer <maximilian@kindshofer.net>
 
 _pkgbase=kitty
-_pkgver=0.31.0
+_pkgver=0.32.0
 
 pkgbase="${_pkgbase}-mithic"
 pkgname=("${_pkgbase}-mithic" "${_pkgbase}-terminfo-mithic" "${_pkgbase}-shell-integration-mithic")
 pkgver="${_pkgver}.mithic.1"
-pkgrel=2
+pkgrel=1
 pkgdesc='A modern, hackable, featureful, OpenGL-based terminal emulator'
 arch=('x86_64')
 url='https://github.com/kovidgoyal/kitty'
@@ -22,7 +22,7 @@ makedepends=('libxinerama' 'libxcursor' 'libxrandr' 'wayland-protocols' 'go')
 source=("${_pkgbase}-${_pkgver}.tar.xz::https://github.com/kovidgoyal/${_pkgbase}/releases/download/v${_pkgver}/${_pkgbase}-${_pkgver}.tar.xz"
         "${_pkgbase}-${_pkgver}.tar.xz.sig::https://github.com/kovidgoyal/${_pkgbase}/releases/download/v${_pkgver}/${_pkgbase}-${_pkgver}.tar.xz.sig"
         "${_pkgbase}-mithic.patch")
-sha512sums=('3868431003f9f1a3907415124c1d8282b077985a9d104615d48f9d309f6fbf1a11119546674508649aa35f2b6e66aa5638024e8127f92ae7b043da367c7b3363'
+sha512sums=('d64f36c20d484724b0215a2ffc9044b83ddaa476926377e6c79226d7d6bd5deffda9964291a99c0df174640fb2fa7df0464435d2cef19304eab7b1d135cc1847'
             'SKIP'
             '73f24f40847a5ea738f56fcf8a19c47a2ea5eb95327d877b49bb6e6657d47ce49b63dd2f1b7ec06d488364629d839f15d7461ed7a291c3bd5ab048245d7e3ac4')
 validpgpkeys=('3CE1780F78DD88DF45194FD706BC317B515ACE7C')  # Kovid Goyal
