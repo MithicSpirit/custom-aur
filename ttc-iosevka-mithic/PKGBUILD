@@ -4,14 +4,15 @@
 
 _pkgname=iosevka-mithic
 
-_iosevka_version=28.0.5
+_iosevka_version=28.1.0
 _nerd_patcher_version=3.1.1
+_config_version=1
 
 _iosevka="Iosevka-${_iosevka_version}"
 _nerd_patcher="nerd-patcher-${_nerd_patcher_version}"
 
 pkgname="ttc-${_pkgname}"
-pkgver="${_iosevka_version}.nerd.${_nerd_patcher_version}.mithic.0"
+pkgver="${_iosevka_version}.nerd.${_nerd_patcher_version}.mithic.${_config_version}"
 pkgrel=1
 provides=('ttf-font-nerd')
 pkgdesc='A custom configuration of the Iosevka monospace font (with nerd symbols).'
@@ -23,9 +24,9 @@ source=("${_iosevka}.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/ta
         "${_nerd_patcher}.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v${_nerd_patcher_version}/FontPatcher.zip"
         build-plans.toml
         get-makeflags.js)
-sha512sums=('0038c0f1e1c09990249d0528ad5bbddd02da6cce7e0e03aff7717ab96cebec08010e2723ca82018147046de7e173347152277bd169150a8984911131000c3446'
+sha512sums=('fce9813cb8590096b602b612dd544e305af140a90c89abd31fbb90aa7ceffadcaf9a818e8e82fe368d968fad1bc8a6075da6da94fe61035688ffcae4c4495b84'
             '83c323a501372609b063826bf1749469676d1e2bb13f5ff9786f9e5941dd1bd8f68567a829b5b7b1ad8c6e4afe956a4a0f866e243101fde6b9667206351e8c43'
-            '72dcf481c7db90d9cf3ff5fbd9cc0ccde5a9af2c5c6516dfcba4cd04b62436d85b946d9e39ea320b12680d6c047e02b5a774efcedb785fb5e660d1ef057bd98c'
+            'ba086c37e1b4ea2165e9e3e38e3d0ae95d6252200a5c17b85cc5b6d0815de24b5d4ae2cc1d8f304aa439d9913bb440849bf0b842b3f7ccfa7675fc6a8c675e5f'
             '167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f')
 
 prepare() {
