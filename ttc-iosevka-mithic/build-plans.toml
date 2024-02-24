@@ -33,6 +33,7 @@ exportGlyphNames = true
     lower-chi = 'semi-chancery-straight'
     zero = 'slashed-split'
     four = 'closed'
+    five = 'upright-flat'
     tilde = 'low'
     asterisk = 'penta-low'
     underscore = 'high'
@@ -95,6 +96,17 @@ exportGlyphNames = true
 
   [buildPlans.IosevkaMithic.ligations]
   enables = [
+    'center-ops',
+    'center-op-trigger-plus-minus-l',
+    'center-op-trigger-plus-minus-r',
+    'center-op-trigger-equal-l',
+    'center-op-trigger-equal-r',
+    'center-op-trigger-bar-l',
+    'center-op-trigger-bar-r',
+    'center-op-trigger-angle-inside',
+    'center-op-trigger-angle-outside',
+    'center-op-influence-dot',
+    'center-op-influence-colon',
     'arrow-l',
     'arrow-r',
     'arrow-lr',
@@ -103,12 +115,15 @@ exportGlyphNames = true
     'lteq',
     'gteq',
     'exeq',
-    'ltgt-diamond',
+    'ltgt-diamond-tag',
     'brst',
     'kern-dotty',
     'kern-bars',
     'llgg',
     'llggeq',
+    'html-comment',
+    'brace-bar',
+    'brack-bar',
     'tilde-tilde-tilde',
     'minus-minus',
     'plus-plus',

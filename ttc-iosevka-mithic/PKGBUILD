@@ -6,7 +6,7 @@ _pkgname=iosevka-mithic
 
 _iosevka_version=28.1.0
 _nerd_patcher_version=3.1.1
-_config_version=1
+_config_version=2
 
 _iosevka="Iosevka-${_iosevka_version}"
 _nerd_patcher="nerd-patcher-${_nerd_patcher_version}"
@@ -26,7 +26,7 @@ source=("${_iosevka}.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/ta
         get-makeflags.js)
 sha512sums=('fce9813cb8590096b602b612dd544e305af140a90c89abd31fbb90aa7ceffadcaf9a818e8e82fe368d968fad1bc8a6075da6da94fe61035688ffcae4c4495b84'
             '83c323a501372609b063826bf1749469676d1e2bb13f5ff9786f9e5941dd1bd8f68567a829b5b7b1ad8c6e4afe956a4a0f866e243101fde6b9667206351e8c43'
-            'ba086c37e1b4ea2165e9e3e38e3d0ae95d6252200a5c17b85cc5b6d0815de24b5d4ae2cc1d8f304aa439d9913bb440849bf0b842b3f7ccfa7675fc6a8c675e5f'
+            '6ae7caa3714ea4b445cdc8ad3e0e00c146f62f0d902fb4d813df3a743d3f83cdf23ed1fc6c78037218d21d789c170068c2877941289bd5aeadd9a10bd920bb26'
             '167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f')
 
 prepare() {
