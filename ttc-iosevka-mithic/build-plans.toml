@@ -105,7 +105,6 @@ exportGlyphNames = true
     'center-op-trigger-bar-r',
     'center-op-trigger-angle-inside',
     'center-op-trigger-angle-outside',
-    'center-op-influence-dot',
     'center-op-influence-colon',
     'arrow-l',
     'arrow-r',
@@ -126,9 +125,13 @@ exportGlyphNames = true
     'brack-bar',
     'tilde-tilde-tilde',
     'minus-minus',
+    'minus-minus-minus',
     'plus-plus',
+    'plus-plus-plus',
     'underscore-underscore',
+    'underscore-underscore-underscore',
     'hash-hash',
+    'hash-hash-hash',
   ]
 
 [buildPlans.IosevkaMithic.weights.thin]
