@@ -1,7 +1,7 @@
 # Maintainer: MithicSpirit <rpc01234 at gmail dot com>
 
 pkgname=mithic-base
-pkgver=2024.02.09.0
+pkgver=2024.02.19.0
 pkgrel=1
 pkgdesc='Packages for a base install for MithicSpirit'
 arch=(any)
@@ -20,7 +20,7 @@ package() {
 		'dashbinsh'
 		'debian-archive-keyring'
 		'dnscrypt-proxy'
-		'dunst-git'
+		'dunst'
 		'efibootmgr'
 		'fail2ban'
 		'flatpak'
