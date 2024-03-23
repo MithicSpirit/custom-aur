@@ -4,7 +4,7 @@
 
 _pkgname=iosevka-mithic
 
-_iosevka_version=28.1.0
+_iosevka_version=29.0.3
 _nerd_patcher_version=3.1.1
 _config_version=3
 
@@ -24,9 +24,9 @@ source=("${_iosevka}.tar.gz::https://github.com/be5invis/Iosevka/archive/refs/ta
         "${_nerd_patcher}.zip::https://github.com/ryanoasis/nerd-fonts/releases/download/v${_nerd_patcher_version}/FontPatcher.zip"
         build-plans.toml
         get-makeflags.js)
-sha512sums=('fce9813cb8590096b602b612dd544e305af140a90c89abd31fbb90aa7ceffadcaf9a818e8e82fe368d968fad1bc8a6075da6da94fe61035688ffcae4c4495b84'
+sha512sums=('8ed963c8b9e21b6b50ccb4194e4a17dd2d65eead6336d86516c73019443080be8693a4257fb49e4cea29961d4e74f6bbccdaf786399e20149004937c40df71e7'
             '83c323a501372609b063826bf1749469676d1e2bb13f5ff9786f9e5941dd1bd8f68567a829b5b7b1ad8c6e4afe956a4a0f866e243101fde6b9667206351e8c43'
-            '2eff7a2b2229504bdf0b526b0617c266ba7b78e472f52061c37b9e74ebfa083f83a3e38eaf2cdacf8120fb513ba86fc16359b37cc95b1aab973bf16393ebfe57'
+            '2f59d7db63ed22eab0a5d35b828eb07bd717b27d711102b9911078db56548f2e796ea72a03ea2695eb219328ded19b16c32bfc9d5c79c2b5315bd347d025499a'
             '167a2da7b6cb06b6b96b4ae204f46e67e4625052df065873158455b0dedc75d2c0080cd39be33da49a984febccff892b3e59e4626d41364e3a8b9865efbd725f')
 
 prepare() {

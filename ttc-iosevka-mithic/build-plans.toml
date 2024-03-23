@@ -32,8 +32,8 @@ exportGlyphNames = true
     lower-mu = 'toothed-serifless'
     lower-chi = 'semi-chancery-straight'
     zero = 'slashed-split'
-    four = 'closed'
-    five = 'upright-flat'
+    four = 'closed-serifless'
+    five = 'upright-flat-serifless'
     tilde = 'low'
     asterisk = 'penta-low'
     underscore = 'high'
@@ -121,8 +121,6 @@ exportGlyphNames = true
     'llgg',
     'llggeq',
     'html-comment',
-    'brace-bar',
-    'brack-bar',
     'tilde-tilde-tilde',
     'minus-minus',
     'minus-minus-minus',
